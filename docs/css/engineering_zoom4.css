@@ -1,0 +1,32 @@
+@import 'blocks/engineering_zoom.css';
+@import 'blocks/callback.css';
+.engineering__block:nth-child(1) {
+  padding-bottom: 227px;
+  background: #f7f5f3 url("../img/engineering_zoom4_bg_1.png") no-repeat bottom center/643px 277px;
+}
+.engineering__block:nth-child(2) {
+  padding-bottom: 138px;
+  background-image: url("../img/engineering_zoom4_bg_2.png"), url("../img/engineering_zoom4_bg_4.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+  background-size: 351px 232px, 100% auto;
+  flex: 1 1 40%;
+}
+.engineering__block:nth-child(3) {
+  background-image: url("../img/engineering_zoom4_bg_3.png"), linear-gradient(180deg, #ff9318 0%, #2a2a2c 100%);
+  background-repeat: no-repeat;
+  background-position: bottom right, center;
+  background-size: 511px 222px, 100%;
+}
+
+@media (max-width: 991.5px) {
+  .engineering__block:nth-child(2) {
+    padding-bottom: 127px;
+    background-size: 246px 163px, 100% auto;
+    background-position: bottom right -70px, top left;
+  }
+  .engineering__block:nth-child(3) {
+    background-size: 455px 198px, 100%;
+    background-position: bottom right -180px, center;
+  }
+}

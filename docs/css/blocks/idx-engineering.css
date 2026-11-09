@@ -1,0 +1,21 @@
+.idx-engineering {
+  padding-block: 120px 80px;
+  background: var(--color-white) url("../../img/idx-engineering_pattern.svg") no-repeat top center/100% auto;
+}
+.idx-engineering .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+@media (max-width: 991.5px) {
+  .idx-engineering {
+    padding-block: 80px;
+    background-size: auto 210px;
+  }
+  .idx-engineering .wrapper {
+    align-items: start;
+    gap: 60px;
+  }
+}

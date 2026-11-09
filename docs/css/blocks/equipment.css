@@ -1,0 +1,125 @@
+.equipment {
+  padding-block: 80px 120px;
+}
+.equipment__top {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-black);
+  padding-top: 80px;
+}
+.equipment__top .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.equipment__list {
+  max-width: 1400px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.equipment__list li {
+  width: 320px;
+  height: auto;
+}
+.equipment__item {
+  width: 320px;
+  height: 100%;
+  background-color: var(--color-white);
+  border: 1px solid #c3c3c3;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.equipment__item:hover {
+  box-shadow: 0 0 20px 0 rgb(from var(--color-primary) r g b / 0.25);
+  border: 1px solid var(--color-primary);
+}
+.equipment__item:hover .equipment__link {
+  color: var(--color-primary);
+}
+.equipment__img {
+  width: 100%;
+  height: 249px;
+  background: linear-gradient(137deg, #edeff1 0%, #f3f4f6 100%);
+  flex-shrink: 0;
+}
+.equipment__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.equipment__item-content {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-black);
+  height: 100%;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.equipment__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-black);
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (max-width: 1199.5px) {
+  .equipment__list {
+    gap: 24px;
+  }
+  .equipment__list li {
+    width: 240px;
+  }
+  .equipment__item {
+    max-width: 240px;
+  }
+  .equipment__img {
+    height: 150px;
+  }
+  .equipment__item-content {
+    font-size: 16px;
+    padding: 16px 12px;
+    gap: 16px;
+  }
+}
+@media (max-width: 991.5px) {
+  .equipment {
+    padding-block: 60px 80px;
+  }
+  .equipment__top {
+    font-size: 15px;
+    padding-top: 60px;
+  }
+  .equipment__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .equipment__list li {
+    width: 100%;
+    max-width: none;
+  }
+  .equipment__item {
+    width: 100%;
+    max-width: none;
+  }
+  .equipment__item-content {
+    font-size: 14px;
+  }
+  .equipment__link {
+    font-size: 13px;
+  }
+}

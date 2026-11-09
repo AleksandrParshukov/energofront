@@ -1,0 +1,130 @@
+@use '../_global/breakpoints.scss' as *;
+
+.idx-equipment {
+  filter: drop-shadow(0 0 20px #{'rgb(from var(--color-primary) r g b / 0.8)'});
+
+  .shadow-wrapper {
+    width: 100%;
+    background-color: var(--color-white);
+    clip-path: polygon(0 35px, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .wrapper {
+    padding-block: 120px 80px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  &__content {
+    font-size: 16px;
+    color: var(--color-black);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+
+  &__slider_wrap {
+    anchor-name: --equip-slider;
+  }
+
+  &__slider {
+    padding-block: 20px;
+
+    .swiper-slide {
+      width: 320px;
+      height: auto;
+    }
+
+    .equipment__item {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    position-anchor: --equip-slider;
+    top: anchor(50%);
+    transform: translateY(-50%);
+    z-index: 1;
+
+    &:not(.swiper-button-disabled):hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__prev {
+    left: calc(anchor(left) - 40px);
+  }
+
+  &__next {
+    right: calc(anchor(right) - 40px);
+  }
+}
+
+@media (max-width: $md) {
+  .idx-equipment {
+    .wrapper {
+      padding-block: 80px;
+      margin-top: 24px;
+      background-color: var(--color-white);
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      clip-path: polygon(0 24px, 100% 0, 100% 100%, 0 100%);
+    }
+
+    &__content {
+      width: 280px;
+    }
+
+    &__slider {
+      .swiper-slide {
+        width: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .idx-equipment {
+    filter: drop-shadow(0 0 10px #{'rgb(from var(--color-primary) r g b / 0.8)'});
+
+    .wrapper {
+      padding-block: 56px 60px;
+      margin-top: 24px;
+      flex-direction: column;
+      gap: 40px;
+      clip-path: polygon(0 10px, 100% 0, 100% 100%, 0 100%);
+    }
+
+    &__content {
+      font-size: 14px;
+      width: 100%;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__slider {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+
+      .swiper-slide {
+        width: 100%;
+        height: auto;
+      }
+
+      .equipment__item {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

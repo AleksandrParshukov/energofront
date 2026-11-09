@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import 'blocks/projects.css';
+@import 'blocks/idx-news.css';
+@import 'blocks/news.css';
+@import 'blocks/news-zoom.css';
+.projects-zoom {
+  padding-block: 80px;
+}
+.projects-zoom .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.projects-zoom__date {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  margin-top: 32px;
+}
+.projects-zoom__main-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-top: 32px;
+  border-radius: 24px;
+}
+.projects-zoom__long-desc {
+  font-weight: 500;
+  font-size: 17px;
+  color: rgba(13, 16, 31, 0.85);
+  text-wrap: pretty;
+  width: 100%;
+  margin-top: 80px;
+}
+.projects-zoom__long-desc strong {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.projects-zoom__long-desc b {
+  font-weight: 600;
+  color: #0d101f;
+}
+.projects-zoom__long-desc h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-primary);
+  margin-top: 24px;
+}
+.projects-zoom__long-desc h3 {
+  font-weight: 600;
+  font-size: inherit;
+  color: var(--color-primary);
+  margin-block: 24px 16px;
+}
+.projects-zoom__long-desc h3 + ol,
+.projects-zoom__long-desc h3 + ul {
+  margin-top: 12px;
+}
+.projects-zoom__long-desc ul,
+.projects-zoom__long-desc ol {
+  padding-left: 1.3em;
+  margin-bottom: 0;
+}
+.projects-zoom__long-desc ol {
+  margin-top: 24px;
+}
+.projects-zoom__long-desc ol li + li {
+  margin-top: 8px;
+}
+.projects-zoom__long-desc ul {
+  padding-left: 1.3em;
+  margin-top: 24px;
+}
+.projects-zoom__long-desc ul li::marker {
+  color: var(--color-primary); /* Цвет маркера */
+}
+.projects-zoom__long-desc ul li + li {
+  margin-top: 12px;
+}
+.projects-zoom__long-desc img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 24px;
+}
+
+@media (max-width: 991.5px) {
+  .projects-zoom {
+    padding-block: 60px;
+  }
+  .projects-zoom .wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .projects-zoom__main-img {
+    width: 100%;
+    height: 200px;
+    margin-top: 24px;
+  }
+  .projects-zoom__date {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  .projects-zoom__long-desc {
+    font-size: 15px;
+    margin-top: 60px;
+  }
+  .projects-zoom__long-desc h2 {
+    font-size: 16px;
+  }
+  .projects-zoom__more-news {
+    padding-top: 0;
+  }
+  .projects-zoom__more-news .idx-news__top {
+    padding-top: 52px;
+    margin-block: 32px 20px;
+  }
+  .projects-zoom__more-news .idx-news__more {
+    margin-top: 0;
+  }
+}

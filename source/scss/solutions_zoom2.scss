@@ -1,0 +1,55 @@
+@use '_global/breakpoints.scss' as *;
+
+@import 'blocks/solutions_zoom.css';
+@import 'blocks/callback.css';
+@import 'blocks/equipment.css';
+
+.solutions {
+  &__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  &__item {
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__table-wrap {
+    max-width: 925px;
+  }
+
+  td {
+    vertical-align: top;
+  }
+}
+
+.equipment {
+  padding-top: 0;
+
+  &__list {
+    margin-top: 32px;
+    justify-content: start;
+  }
+
+  &__img {
+    height: 223px;
+  }
+}
+
+@media (max-width: $ssm) {
+  .solutions {
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__table {
+      th,
+      td {
+        width: auto;
+      }
+    }
+  }
+}

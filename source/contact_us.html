@@ -1,0 +1,79 @@
+@@include('./_header.html', {'logo': 'logo_gray.png'})
+
+<section>
+  <div class="wrapper">
+    <ol class="breadcrumbs">
+      <li><a href="/">Главная</a></li>
+      <li>Контакты</li>
+    </ol>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="wrapper">
+    <div class="contacts__content">
+      <h2 class="h2 border-left border-left-ssm">Контакты</h2>
+      <p class="contacts__desc">
+        Свяжитесь с нами для получения консультации по вашему проекту
+      </p>
+    </div>
+
+    <ul class="contacts__list">
+      <li class="contacts__item address">
+        <div class="contacts__icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6673 8.33332C16.6673 12.4942 12.0515 16.8275 10.5015 18.1658C10.3571 18.2744 10.1813 18.3331 10.0007 18.3331C9.81999 18.3331 9.64421 18.2744 9.49982 18.1658C7.94982 16.8275 3.33398 12.4942 3.33398 8.33332C3.33398 6.56521 4.03636 4.86952 5.28661 3.61928C6.53685 2.36904 8.23254 1.66666 10.0007 1.66666C11.7688 1.66666 13.4645 2.36904 14.7147 3.61928C15.9649 4.86952 16.6673 6.56521 16.6673 8.33332Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 10.8333C11.3807 10.8333 12.5 9.71406 12.5 8.33334C12.5 6.95263 11.3807 5.83334 10 5.83334C8.61929 5.83334 7.5 6.95263 7.5 8.33334C7.5 9.71406 8.61929 10.8333 10 10.8333Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Офис</p>
+        <p class="contacts__address">
+          192019, Россия, Санкт-Петербург, ул.Седова д.12, БЦ «Т4», офис 518
+        </p>
+      </li>
+      <li class="contacts__item predst">
+        <div class="contacts__icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6673 8.33332C16.6673 12.4942 12.0515 16.8275 10.5015 18.1658C10.3571 18.2744 10.1813 18.3331 10.0007 18.3331C9.81999 18.3331 9.64421 18.2744 9.49982 18.1658C7.94982 16.8275 3.33398 12.4942 3.33398 8.33332C3.33398 6.56521 4.03636 4.86952 5.28661 3.61928C6.53685 2.36904 8.23254 1.66666 10.0007 1.66666C11.7688 1.66666 13.4645 2.36904 14.7147 3.61928C15.9649 4.86952 16.6673 6.56521 16.6673 8.33332Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 10.8333C11.3807 10.8333 12.5 9.71406 12.5 8.33334C12.5 6.95263 11.3807 5.83334 10 5.83334C8.61929 5.83334 7.5 6.95263 7.5 8.33334C7.5 9.71406 8.61929 10.8333 10 10.8333Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Представительство</p>
+        <p class="contacts__address">
+          4255/4287 Cao’an Road, Jiading District, Шанхай, Китай
+        </p>
+      </li>
+      <li class="contacts__item phone">
+        <div class="contacts__icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.0713 13.1689C11.2296 13.2416 11.408 13.2582 11.5771 13.216C11.7461 13.1738 11.8957 13.0752 12.0013 12.9366L12.2734 12.5801C12.4163 12.3897 12.6015 12.2351 12.8144 12.1287C13.0273 12.0222 13.2621 11.9668 13.5001 11.9668H15.8001C16.2068 11.9668 16.5968 12.1283 16.8844 12.4159C17.1719 12.7034 17.3335 13.0935 17.3335 13.5001V15.8001C17.3335 16.2068 17.1719 16.5968 16.8844 16.8844C16.5968 17.1719 16.2068 17.3335 15.8001 17.3335C12.1401 17.3335 8.63 15.8796 6.04197 13.2915C3.45394 10.7035 2 7.19338 2 3.53335C2 3.12668 2.16155 2.73667 2.44911 2.44911C2.73667 2.16155 3.12668 2 3.53335 2H5.83337C6.24004 2 6.63006 2.16155 6.91762 2.44911C7.20517 2.73667 7.36672 3.12668 7.36672 3.53335V5.83337C7.36672 6.07142 7.3113 6.3062 7.20484 6.51911C7.09839 6.73202 6.94382 6.91723 6.75338 7.06005L6.39458 7.32916C6.25383 7.43663 6.15463 7.58951 6.11382 7.76183C6.07301 7.93415 6.09311 8.11529 6.17071 8.27447C7.21851 10.4027 8.9418 12.1238 11.0713 13.1689Z" stroke="currentColor" stroke-width="1.53335" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Телефон</p>
+        <a href="tel:+78123091380" class="contacts__link">+7 (812) 309 13 80</a>
+      </li>
+      <li class="contacts__item email">
+        <div class="contacts__icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.1673 6.41678L11.9256 11.6665C11.6459 11.829 11.3282 11.9145 11.0048 11.9145C10.6813 11.9145 10.3637 11.829 10.084 11.6665L1.83398 6.41678" stroke="currentColor" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.334 3.66678H3.66732C2.6548 3.66678 1.83398 4.48759 1.83398 5.50011V16.5001C1.83398 17.5126 2.6548 18.3334 3.66732 18.3334H18.334C19.3465 18.3334 20.1673 17.5126 20.1673 16.5001V5.50011C20.1673 4.48759 19.3465 3.66678 18.334 3.66678Z" stroke="currentColor" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Email</p>
+        <a href="mailto:info@energofront.ru" class="contacts__link">info@energofront.ru</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="map">
+    <div class="map__block">
+      <p class="map__city">Санкт-Петербург</p>
+      <p class="map__address">192019, Россия, Санкт-Петербург, ул. Седова д.12, БЦ «Т4», офис 518</p>
+      <a href="https://yandex.ru/maps/?rtext=~59.902969,30.3985" class="btn btn-primary">Построить маршрут</a>
+    </div>
+    <div id="" class="map__map js_map"></div>
+  </div>
+</section>
+
+
+@@include('./_footer.html')

@@ -1,0 +1,13 @@
+@import 'blocks/solutions_zoom.css';
+@import 'blocks/callback.css';
+@import 'blocks/equipment.css';
+.equipment {
+  padding-top: 0;
+}
+.equipment__list {
+  margin-top: 32px;
+  justify-content: start;
+}
+.equipment__img {
+  height: 223px;
+}

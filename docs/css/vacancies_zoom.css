@@ -1,0 +1,230 @@
+@charset "UTF-8";
+.vacancies {
+  padding-block: 80px;
+}
+.vacancies__top {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.vacancies__top .h2 {
+  margin-top: 80px;
+}
+.vacancies__top p {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(13, 16, 31, 0.9);
+  margin-top: 24px;
+}
+.vacancies__desc {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+.vacancies__caption {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+  margin-block: 52px 28px;
+}
+.vacancies__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px 34px;
+}
+.vacancies__list li {
+  display: flex;
+  gap: 8px;
+}
+.vacancies__list li::before {
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.85867 1.30632C6.50299 -0.43492 8.96576 -0.43492 9.61008 1.30632L10.5213 3.76878C10.7238 4.31622 11.1555 4.74784 11.7029 4.95041L14.1654 5.8616C15.9066 6.50592 15.9066 8.96869 14.1654 9.61301L11.7029 10.5242C11.1555 10.7268 10.7238 11.1584 10.5213 11.7058L9.61008 14.1683C8.96576 15.9095 6.50299 15.9095 5.85867 14.1683L4.94748 11.7058C4.74491 11.1584 4.31329 10.7268 3.76585 10.5242L1.30339 9.61301C-0.43785 8.96869 -0.43785 6.50592 1.30339 5.8616L3.76585 4.95041C4.31329 4.74784 4.74491 4.31622 4.94748 3.76878L5.85867 1.30632Z' fill='%23FF9318'/%3E%3C/svg%3E") no-repeat center/16px;
+  flex-shrink: 0;
+}
+.vacancies__list.empty-mark li::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='-1 -1 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.85867 1.30632C6.50299 -0.43492 8.96576 -0.43492 9.61008 1.30632L10.5213 3.76878C10.7238 4.31622 11.1555 4.74784 11.7029 4.95041L14.1654 5.8616C15.9066 6.50592 15.9066 8.96869 14.1654 9.61301L11.7029 10.5242C11.1555 10.7268 10.7238 11.1584 10.5213 11.7058L9.61008 14.1683C8.96576 15.9095 6.50299 15.9095 5.85867 14.1683L4.94748 11.7058C4.74491 11.1584 4.31329 10.7268 3.76585 10.5242L1.30339 9.61301C-0.43785 8.96869 -0.43785 6.50592 1.30339 5.8616L3.76585 4.95041C4.31329 4.74784 4.74491 4.31622 4.94748 3.76878L5.85867 1.30632Z' stroke='%23FF9318' stroke-width='1.5' /%3E%3C/svg%3E");
+}
+.vacancies__list.conditions {
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, min-content);
+}
+.vacancies__list.conditions li:last-child {
+  grid-row: span 3;
+}
+.vacancies__requirements {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+.vacancies__requirements > div {
+  padding: 12px;
+  border: 1px solid var(--color-primary);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: 16px;
+  grid-column: span 2;
+}
+.vacancies__requirements > div + div {
+  margin-top: 12px;
+}
+.vacancies__requirements dt {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--color-primary);
+}
+.vacancies__requirements dd {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.join {
+  color: var(--color-white);
+  padding: 0 32px;
+  margin-top: 60px;
+  background: linear-gradient(91.85deg, #2a2a2c 0.08%, rgba(255, 147, 24, 0.1) 99.92%), linear-gradient(180deg, #ff9318 0%, #2a2a2c 100%);
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.join__title {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.join__decor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  /*
+   * Маска управляет прозрачностью ВСЕГО слоя.
+   * В центре opacity = 1, к верхнему и нижнему
+   * краю слой постепенно исчезает.
+   */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.45) 19%, #000 42%, #000 58%, rgba(0, 0, 0, 0.45) 81%, rgba(0, 0, 0, 0.1) 96%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.1) 4%, rgba(0, 0, 0, 0.45) 19%, #000 42%, #000 58%, rgba(0, 0, 0, 0.45) 81%, rgba(0, 0, 0, 0.1) 96%, transparent 100%);
+}
+.join__decor span {
+  color: transparent;
+  width: -moz-max-content;
+  width: max-content;
+  /*
+  * Именно это создаёт контур:
+  * текст прозрачен, видна только stroke-обводка.
+  */
+}
+.join__decor span:not(:nth-child(6)) {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 147, 24, 0.3);
+  text-stroke: 1px rgba(255, 147, 24, 0.3);
+}
+.join__content {
+  font-weight: 540;
+  font-size: 20px;
+  max-width: 738px;
+  padding-block: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.join__content a {
+  font-weight: 600;
+  font-size: 22px;
+}
+.join__content .btn {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  padding: 12px 32px;
+  margin-top: 20px;
+  border-radius: 100vw;
+}
+
+@media (max-width: 991.5px) {
+  .vacancies {
+    padding-block: 60px 0;
+  }
+  .vacancies__top {
+    height: 270px;
+  }
+  .vacancies__top p {
+    font-size: 15px;
+  }
+  .vacancies__desc {
+    font-size: 16px;
+    letter-spacing: -0.03em;
+  }
+  .vacancies__caption {
+    font-size: 16px;
+    letter-spacing: -0.03em;
+    margin-block: 32px 24px;
+  }
+  .vacancies__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .vacancies__list.conditions {
+    display: flex;
+    flex-direction: column;
+  }
+  .vacancies__requirements {
+    display: flex;
+    flex-direction: column;
+  }
+  .vacancies__requirements > div {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .join {
+    color: var(--color-white);
+    width: 100vw;
+    padding: 52px 32px;
+    margin-left: 50%;
+    border-radius: 24px 24px 0 0;
+    flex-direction: column;
+    gap: 32px;
+    transform: translateX(-50%);
+  }
+  .join__title {
+    font-size: 24px;
+    width: auto;
+  }
+  .join__content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .join__content .btn {
+    width: 100%;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+}

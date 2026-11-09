@@ -1,0 +1,102 @@
+.news-zoom {
+  padding-block: 80px;
+}
+.news-zoom .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.news-zoom__date {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  margin-top: 32px;
+}
+.news-zoom__long-desc {
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--color-black);
+  margin-top: 60px;
+}
+.news-zoom__long-desc table {
+  width: 100% !important;
+  height: auto !important;
+  border-collapse: collapse;
+}
+.news-zoom__long-desc table th {
+  font-weight: 600;
+  color: var(--color-white);
+  text-align: start;
+  background-color: var(--color-primary);
+}
+.news-zoom__long-desc table th,
+.news-zoom__long-desc table td {
+  font-size: 13px;
+  padding: 10px 12px;
+}
+.news-zoom__long-desc table td {
+  font-weight: 500;
+}
+.news-zoom__long-desc table td:first-child {
+  font-weight: 600;
+}
+.news-zoom__long-desc table tr:nth-child(2n+2) {
+  background-color: var(--color-white);
+}
+.news-zoom__long-desc table tr:nth-child(2n+3) {
+  background-color: #f7f5f3;
+}
+.news-zoom__img {
+  width: 660px;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.news-zoom__more-news {
+  padding-top: 0;
+  background: transparent url("../img/news_bg.svg") no-repeat bottom center/100% auto;
+}
+.news-zoom__more-news .wrapper {
+  padding-top: 0;
+}
+.news-zoom__more-news .idx-news__top {
+  padding-top: 60px;
+  margin-block: 52px 20px;
+  border-top: 1px solid var(--color-primary);
+}
+.news-zoom__more-news .idx-news__more {
+  margin-left: auto;
+}
+
+@media (max-width: 991.5px) {
+  .news-zoom {
+    padding-block: 60px;
+  }
+  .news-zoom .wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .news-zoom__date {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  .news-zoom__long-desc {
+    font-size: 15px;
+  }
+  .news-zoom__img {
+    width: 100%;
+    max-width: 410px;
+    margin-inline: auto;
+  }
+  .news-zoom__more-news {
+    padding-top: 0;
+  }
+  .news-zoom__more-news .idx-news__top {
+    padding-top: 52px;
+    margin-block: 32px 20px;
+  }
+  .news-zoom__more-news .idx-news__more {
+    margin-top: 0;
+  }
+}

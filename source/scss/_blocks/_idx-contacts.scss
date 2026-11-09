@@ -1,0 +1,55 @@
+@use '../_global/breakpoints.scss' as *;
+
+.idx-contacts {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 110vw;
+    height: auto;
+    aspect-ratio: 1582 / 245;
+    background: transparent url('../img/contacts_news_pattern.svg') no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -95%) rotate(-5deg);
+  }
+
+  .wrapper {
+    color: var(--color-white);
+    background-color: var(--color-black);
+
+    .h2 {
+      color: inherit;
+    }
+  }
+
+  .contacts {
+    &__item {
+      border: 1.5px solid #{'rgb(from var(--color-white) r g b / 0.5)'};
+      box-shadow: 0 0 20px 0 rgba(254, 255, 255, 0.2);
+
+      &.address {
+        background: url('../img/contacts_bg_1.svg') no-repeat right bottom / auto 72px;
+      }
+
+      &.predst {
+        background: url('../img/contacts_bg_1.svg') no-repeat right bottom / auto 72px;
+      }
+
+      &.phone {
+        background: url('../img/contacts_bg_2.svg') no-repeat left bottom / auto 70px;
+      }
+
+      &.email {
+        background: url('../img/contacts_bg_3.svg') no-repeat right bottom / auto 70px;
+      }
+    }
+
+    &__icon {
+      color: var(--color-black);
+      background-color: var(--color-white);
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.about {
+  padding-block: 80px 120px;
+}
+.about .wrapper {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-areas: "title files" "desc files" "benefits benefits";
+  gap: 0 80px;
+}
+.about .wrapper .h2 {
+  margin-bottom: 52px;
+  grid-area: title;
+}
+.about__long-desc {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(from var(--color-black) r g b / 0.9);
+  grid-area: desc;
+}
+.about__download-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-area: files;
+}
+.about__benefits {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  grid-area: benefits;
+}
+.about__benefits li {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(from var(--color-black) r g b / 0.9);
+  padding: 24px;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  box-shadow: 0 0 20px 0 rgba(13, 16, 31, 0.15);
+  border: 1px solid var(--color-white);
+  border-radius: 12px;
+}
+.about__benefits li > p {
+  max-width: 367px;
+}
+.about__benefits li:nth-child(1) {
+  background-image: url("../img/about_1.png");
+  background-position: bottom -55px right -68px;
+}
+.about__benefits li:nth-child(2) {
+  background-image: url("../img/about_2.png");
+  background-position: bottom -55px right -72px;
+}
+.about__benefits li:nth-child(3) {
+  background-image: url("../img/about_3.png");
+  background-position: bottom -48px right -60px;
+}
+.about__ben-caption {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-black);
+  margin-bottom: 12px;
+}
+
+.about-desc {
+  padding-block: 80px;
+}
+
+.idx-news.about-news {
+  background-color: var(--color-white);
+  background-image: url("../img/main_bg_pattern.svg"), linear-gradient(180deg, rgb(from var(--color-primary) r g b / 0.1) 0%, transparent 220px);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, top center;
+  background-size: 100% auto, cover;
+}
+
+@media (max-width: 991.5px) {
+  .about {
+    padding-block: 60px 80px;
+  }
+  .about .wrapper {
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "files" "desc" "benefits";
+    gap: 0;
+  }
+  .about .wrapper .h2 {
+    margin-bottom: 0;
+  }
+  .about__long-desc {
+    font-size: 15px;
+  }
+  .about__download-list {
+    margin-block: 32px;
+    gap: 12px;
+  }
+  .about__benefits {
+    margin-top: 60px;
+    grid-template-columns: 100%;
+    gap: 12px;
+  }
+  .about__benefits li {
+    padding: 16px;
+    background-size: 170px 170px;
+  }
+  .about__benefits li:nth-child(1) {
+    background-position: bottom -32px right -40px;
+  }
+  .about__benefits li:nth-child(2) {
+    background-position: bottom -32px right -40px;
+  }
+  .about__benefits li:nth-child(3) {
+    background-position: bottom -32px right -40px;
+  }
+  .about__ben-caption {
+    font-size: 18px;
+  }
+  .about-desc {
+    padding-block: 60px;
+  }
+}

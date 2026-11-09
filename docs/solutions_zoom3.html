@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Энергофронт</title>
+
+    <!-- Стили страницы -->
+    
+    <link rel="stylesheet" href="/css/solutions_zoom3.css" /> 
+  </head>
+
+  <body>
+    <header class="header @@header_class">
+      <div class="wrapper">
+        <a href="/" class="header__logo"><img src="./img/logo_gray.png" width="140" height="64" alt="EnergoFront"></a>
+        <button type="button" class="header__menu-toggle js_header_menu_toggle to-md">
+          <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.3335 4.99902H26.6668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.3335 12H26.6668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.3335 19H26.6668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <nav class="main-nav">
+          <button type="button" class="main-nav__close js_header_menu_close to-md">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.0685 10.1598C21.2815 9.94675 21.6272 9.94675 21.8402 10.1598C22.0533 10.3728 22.0533 10.7185 21.8402 10.9315L16.7718 16L21.8402 21.0685C22.0533 21.2815 22.0533 21.6272 21.8402 21.8402C21.6272 22.0533 21.2815 22.0533 21.0685 21.8402L16 16.7718L10.9315 21.8402C10.7185 22.0533 10.3728 22.0533 10.1598 21.8402C9.94675 21.6272 9.94675 21.2815 10.1598 21.0685L15.2282 16L10.1598 10.9315C9.94675 10.7185 9.94675 10.3728 10.1598 10.1598C10.3728 9.94675 10.7185 9.94675 10.9315 10.1598L16 15.2282L21.0685 10.1598Z" fill="#feffff" />
+            </svg>
+          </button>
+
+          <div class="header__controls to-md">
+            <div class="header__search search">
+              <button type="button" class="search__btn">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.60344 1.40014C4.48885 1.40014 3.41991 1.84294 2.63177 2.63112C1.84363 3.4193 1.40086 4.4883 1.40086 5.60296C1.40086 6.71762 1.84363 7.78662 2.63177 8.57481C3.41991 9.36299 4.48885 9.80578 5.60344 9.80578C6.71804 9.80578 7.78698 9.36299 8.57512 8.57481C9.36325 7.78662 9.80602 6.71762 9.80602 5.60296C9.80602 4.4883 9.36325 3.4193 8.57512 2.63112C7.78698 1.84294 6.71804 1.40014 5.60344 1.40014ZM3.46126e-08 5.60296C0.000127707 4.71117 0.213084 3.83228 0.621169 3.03934C1.02925 2.2464 1.62068 1.56232 2.3463 1.04394C3.07193 0.52556 3.91078 0.187859 4.79315 0.0588999C5.67553 -0.0700589 6.57593 0.0134496 7.41955 0.302485C8.26316 0.591521 9.02561 1.07774 9.64353 1.72072C10.2614 2.36371 10.717 3.14489 10.9723 3.99936C11.2276 4.85382 11.2753 5.75689 11.1115 6.6335C10.9476 7.51011 10.5769 8.33495 10.0302 9.03947L13.8034 12.8129C13.931 12.945 14.0016 13.122 14 13.3056C13.9984 13.4893 13.9247 13.665 13.7948 13.7948C13.665 13.9247 13.4893 13.9984 13.3057 14C13.122 14.0016 12.9451 13.931 12.813 13.8034L9.03975 10.0299C8.21146 10.673 7.21935 11.0708 6.17623 11.178C5.13311 11.2852 4.08084 11.0975 3.13908 10.6363C2.19732 10.1751 1.40387 9.4589 0.848939 8.5691C0.294012 7.6793 -0.000116496 6.65164 3.46126e-08 5.60296Z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="header__language">
+              <a href="#" class="active">RU</a>
+              <a href="#">EN</a>
+            </div>
+          </div>
+
+          <ul class="main-nav__list">
+            <li class="dropdown">
+              <a href="about.html" class="main-nav__link dropdown__toggle">
+                <span>О компании</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.8999 6.53555L10.3999 12.5356L4.3999 6.53555" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </a>
+
+              <div class="js_dropdown">
+                <ul class="dropdown__menu">
+                  <li><a href="about.html" class="main-nav__link">О нас</a></li>
+                  <li><a href="#" class="main-nav__link">Миссия</a></li>
+                  <li><a href="#" class="main-nav__link">Отрасли</a></li>
+                  <li><a href="#" class="main-nav__link">Нам доверяют</a></li>
+                  <li><a href="#" class="main-nav__link">Партнеры</a></li>
+                  <li><a href="#" class="main-nav__link">Благодарности</a></li>
+                  <li><a href="#" class="main-nav__link">Сертификаты</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="equipment.html" class="main-nav__link dropdown__toggle">
+                <span>Оборудование</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.8999 6.53555L10.3999 12.5356L4.3999 6.53555" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </a>
+
+              <div class="js_dropdown">
+                <ul class="dropdown__menu">
+                  <li><a href="#" class="main-nav__link">Насосные агрегаты</a></li>
+                  <li><a href="#" class="main-nav__link">Электродвигатели</a></li>
+                  <li><a href="#" class="main-nav__link">Гидромуфты</a></li>
+                  <li><a href="#" class="main-nav__link">Муфты</a></li>
+                  <li><a href="#" class="main-nav__link">Электротехническое оборудование</a></li>
+                  <li><a href="#" class="main-nav__link">Редукторы и мультипликаторы</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="engineering.html" class="main-nav__link dropdown__toggle">
+                <span>Инжиниринг</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.8999 6.53555L10.3999 12.5356L4.3999 6.53555" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </a>
+
+              <div class="js_dropdown">
+                <ul class="dropdown__menu">
+                  <li><a href="#" class="main-nav__link">Проектирование</a></li>
+                  <li><a href="#" class="main-nav__link">Комплексная поставка оборудования</a></li>
+                  <li><a href="#" class="main-nav__link">Монтаж</a></li>
+                  <li><a href="#" class="main-nav__link">Сервис</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="projects.html" class="main-nav__link">Реализованные проекты</a></li>
+            <li><a href="news.html" class="main-nav__link">Новости</a></li>
+            <li><a href="vacancies.html" class="main-nav__link">Карьера</a></li>
+            <li><a href="contact_us.html" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__controls from-md">
+          <a href="tel:+78123091380">+7 (812) 309 13 80</a>
+
+          <div class="header__search search">
+            <button type="button" class="search__btn">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60344 1.40014C4.48885 1.40014 3.41991 1.84294 2.63177 2.63112C1.84363 3.4193 1.40086 4.4883 1.40086 5.60296C1.40086 6.71762 1.84363 7.78662 2.63177 8.57481C3.41991 9.36299 4.48885 9.80578 5.60344 9.80578C6.71804 9.80578 7.78698 9.36299 8.57512 8.57481C9.36325 7.78662 9.80602 6.71762 9.80602 5.60296C9.80602 4.4883 9.36325 3.4193 8.57512 2.63112C7.78698 1.84294 6.71804 1.40014 5.60344 1.40014ZM3.46126e-08 5.60296C0.000127707 4.71117 0.213084 3.83228 0.621169 3.03934C1.02925 2.2464 1.62068 1.56232 2.3463 1.04394C3.07193 0.52556 3.91078 0.187859 4.79315 0.0588999C5.67553 -0.0700589 6.57593 0.0134496 7.41955 0.302485C8.26316 0.591521 9.02561 1.07774 9.64353 1.72072C10.2614 2.36371 10.717 3.14489 10.9723 3.99936C11.2276 4.85382 11.2753 5.75689 11.1115 6.6335C10.9476 7.51011 10.5769 8.33495 10.0302 9.03947L13.8034 12.8129C13.931 12.945 14.0016 13.122 14 13.3056C13.9984 13.4893 13.9247 13.665 13.7948 13.7948C13.665 13.9247 13.4893 13.9984 13.3057 14C13.122 14.0016 12.9451 13.931 12.813 13.8034L9.03975 10.0299C8.21146 10.673 7.21935 11.0708 6.17623 11.178C5.13311 11.2852 4.08084 11.0975 3.13908 10.6363C2.19732 10.1751 1.40387 9.4589 0.848939 8.5691C0.294012 7.6793 -0.000116496 6.65164 3.46126e-08 5.60296Z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="header__language">
+            <a href="#" class="active">RU</a>
+            <a href="#">EN</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+<section class="solutions__top" style="background-image: url('../img/solutons_zoom3_top.png');">
+  <div class="wrapper">
+    <ol class="breadcrumbs">
+      <li><a href="/">Главная</a></li>
+      <li>Промышленное машиностроение</li>
+    </ol>
+
+    <h1 class="h2 border-left border-bottom-ssm">Промышленное машиностроение</h1>
+  </div>
+</section>
+
+<section class="solutions">
+  <div class="wrapper">
+    <div class="solutions__desc desc">
+      <p>Промышленное машиностроение — это основа технологического развития любой отрасли. Именно здесь создаются машины и оборудование, которые обеспечивают работу энергетики, транспорта, добывающей и обрабатывающей промышленности. В условиях импортозамещения и необходимости модернизации производственных мощностей предприятиям нужен не просто поставщик комплектующих, а инжиниринговый партнёр, который понимает специфику каждой подотрасли и готов предлагать комплексные решения — от подбора электродвигателей, редукторов и насосов для комплектации выпускаемого оборудования до реализации проектов под ключ.</p>
+      <p>Поставляем оборудование для заводов, входящих в структуру «Росатома», «Объединённой судостроительной корпорации», АО «ГРУППА ГМС», АО «ЕКС» и других системообразующих компаний.</p>
+    </div>
+
+    <p class="solutions__caption">Отраслевые задачи и вызовы</p>
+    <ul class="solutions__list">
+      <li class="solutions__item">
+        <div class="solutions__content">
+          <p class="solutions__name">Энергетическое машиностроение</p>
+          <p class="solutions__text">
+            Производство техники для генерации и передачи электрической энергии: паровые, газовые и гидравлические турбины, котлы, реакторы, генераторы и силовые трансформаторы. Ключевое требование — надёжность и экономичность в долгосрочной эксплуатации.
+          </p>
+          <p class="solutions__list-name">Поставляем:</p>
+          <ul>
+            <li>Электродвигатели высокого и низкого напряжения мощностью 250–15 250 кВт</li>
+            <li>Системы частотного регулирования и автоматизации</li>
+            <li>Редукторы и мультипликаторы для турбоагрегатов и компрессорных станций</li>
+            <li>Насосное и теплообменное оборудование для систем водоподготовки</li>
+          </ul>
+        </div>
+        <img class="solutions__img" src="./img/solutions_3_1.png" alt="">
+      </li>
+      <li class="solutions__item" style="background-image: url('./img/solutions_3_2.png');">
+        <p class="solutions__name">Судовое машиностроение</p>
+        <p class="solutions__text">
+          Производство оборудования для морских и речных судов в условиях повышенных нагрузок, вибрации и агрессивной морской среды. Оборудование соответствует требованиям РМРС и рассчитано на ресурс работы 25 лет и более.
+        </p>
+        <p class="solutions__list-name">Поставляем:</p>
+        <ul>
+          <li>Электродвигатели с сертификацией РМРС (11–8 000 кВт) с частотными приводами</li>
+          <li>Системы управления и автоматизации с поддержкой промышленных протоколов</li>
+          <li>Насосное оборудование для судовых систем</li>
+          <li>Системы смазки судовых силовых механизмов</li>
+        </ul>
+      </li>
+      <li class="solutions__item" style="background-image: url('./img/solutions_3_3.png');">
+        <p class="solutions__name">Тяжёлое машиностроение</p>
+        <p class="solutions__text">
+          Производство металлургического, горнорудного, кузнечно-прессового, дробильно-размольного и подъёмно-транспортного оборудования. Особенность — отливка и механическая обработка крупногабаритных деталей в тяжёлых режимах работы.
+        </p>
+        <p class="solutions__list-name">Поставляем:</p>
+        <ul>
+          <li>Электродвигатели большой мощности до 15 000 кВт для дробилок и конвейеров</li>
+          <li>Гидромуфты и упругие муфты для плавного пуска и защиты от перегрузок</li>
+          <li>Редукторы с высоким крутящим моментом для тяжёлых режимов эксплуатации</li>
+          <li>Частотные преобразователи для энергосбережения и управления режимами</li>
+        </ul>
+      </li>
+      <li class="solutions__item" style="background-image: url('./img/solutions_3_4.png');">
+        <p class="solutions__name">Компрессоростроение</p>
+        <p class="solutions__text">
+          Производство компрессорной техники для сжатия газов и паров, транспортировки газа по газопроводам и систем охлаждения. Отрасль требует высокой точности проектирования, особенно для центробежных компрессоров.
+        </p>
+        <p class="solutions__list-name">Поставляем:</p>
+        <ul>
+          <li>Электродвигатели с взрывозащитой для компрессорных установок</li>
+          <li>Системы автоматизации и частотного регулирования</li>
+          <li>Муфты и мультипликаторы для компрессорных агрегатов</li>
+          <li>Насосное оборудование для систем охлаждения и смазки</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="info">
+      <div class="info__block">
+        <p class="solutions__caption">Электродвигатели</p>
+
+        <div class="solutions__table-wrap">
+          <table class="solutions__table">
+            <tr>
+              <th>Тип</th>
+              <th>Мощность</th>
+              <th>Напряжение</th>
+              <th>Особенности</th>
+            </tr>
+            <tr>
+              <td>Низковольтные</td>
+              <td>до 800 кВт</td>
+              <td>220–690 В</td>
+              <td>Степень защиты до IP55, взрывозащита, сертификация РМРС</td>
+            </tr>
+            <tr>
+              <td>Высоковольтные</td>
+              <td>до 15 250 кВт</td>
+              <td>3 000–10 000 В</td>
+              <td>Одно- и двухскоростные, взрывозащита, сертификация РМРС</td>
+            </tr>
+            <tr>
+              <td>Синхронные</td>
+              <td>до 15 000 кВт</td>
+              <td>380–10 000 В</td>
+              <td>Частота вращения от 100 до 1 500 об/мин</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="info__block">
+        <p class="solutions__caption">Дополнительное оборудование</p>
+
+        <ul class="info__list">
+          <li class="info__item">
+            <p class="info__name">Редукторы и муфты</p>
+            <p>Редукторы и мультипликаторы для тяжёлых условий эксплуатации. Гидромуфты и упругие муфты для плавного пуска и защиты от перегрузок.</p>
+          </li>
+          <li class="info__item">
+            <p class="info__name">Насосное оборудование</p>
+            <p>Насосы различных типов для систем охлаждения, водоподготовки, гидравлических систем и технологических процессов.</p>
+          </li>
+          <li class="info__item">
+            <p class="info__name">Насосное оборудование</p>
+            <p>Частотные преобразователи, устройства плавного пуска, системы управления с поддержкой протоколов Profibus, Ethernet, Profinet, CANopen, ModbusTCP/IP.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="equipment">
+  <div class="wrapper">
+    <h2 class="solutions__caption">Оборудование для машиностроения</h2>
+    <ul class="equipment__list">
+      <li>
+        <a href="/equipment_zoom.html" class="equipment__item">
+          <p class="equipment__caption">ПИТАТЕЛЬНЫЕ НАСОСЫ И АГРЕГАТЫ</p>
+          <dl class="equipment__details">
+            <div>
+              <div>
+                <dt>Тип:</dt>
+                <dd>однокорпусные и двухкорпусные</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Производительность:</dt>
+                <dd>до 5 200 м3/ч</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Напор:</dt>
+                <dd>до 4 200 м</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Мощность:</dt>
+                <dd>до 15 000 кВт</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Привод:</dt>
+                <dd>электродвигатель, турбина</dd>
+              </div>
+            </div>
+          </dl>
+          <img src="/img/equipment_zoom_1.png" width="371" height="241" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="/equipment_zoom.html" class="equipment__item">
+          <p class="equipment__caption">КОНДЕНСАТНЫЕ НАСОСЫ И АГРЕГАТЫ</p>
+          <dl class="equipment__details">
+            <div>
+              <div>
+                <dt>Тип:</dt>
+                <dd>однокорпусные и двухкорпусные</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Производительность:</dt>
+                <dd>до 5 200 м3/ч</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Напор:</dt>
+                <dd>до 4 200 м</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Мощность:</dt>
+                <dd>до 15 000 кВт</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Привод:</dt>
+                <dd>электродвигатель, турбина</dd>
+              </div>
+            </div>
+          </dl>
+
+          <img src="/img/equipment_zoom_2.png" width="371" height="241" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="/equipment_zoom.html" class="equipment__item">
+          <p class="equipment__caption">ЦИРКУЛЯЦИОННЫЕ НАСОСЫ И АГРЕГАТЫ</p>
+          <dl class="equipment__details">
+            <div>
+              <div>
+                <dt>Тип:</dt>
+                <dd>однокорпусные и двухкорпусные</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Производительность:</dt>
+                <dd>до 5 200 м3/ч</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Напор:</dt>
+                <dd>до 4 200 м</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Мощность:</dt>
+                <dd>до 15 000 кВт</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Привод:</dt>
+                <dd>электродвигатель, турбина</dd>
+              </div>
+            </div>
+          </dl>
+
+          <img src="/img/equipment_zoom_3.png" width="371" height="241" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="/equipment_zoom.html" class="equipment__item">
+          <p class="equipment__caption">СЕТЕВЫЕ НАСОСЫ И АГРЕГАТЫ</p>
+          <dl class="equipment__details">
+            <div>
+              <div>
+                <dt>Тип:</dt>
+                <dd>однокорпусные и двухкорпусные</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Производительность:</dt>
+                <dd>до 5 200 м3/ч</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Напор:</dt>
+                <dd>до 4 200 м</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Мощность:</dt>
+                <dd>до 15 000 кВт</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Привод:</dt>
+                <dd>электродвигатель, турбина</dd>
+              </div>
+            </div>
+          </dl>
+
+          <img src="/img/equipment_zoom_4.png" width="371" height="241" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="/equipment_zoom.html" class="equipment__item">
+          <p class="equipment__caption">БУСТЕРНЫЕ НАСОСЫ И АГРЕГАТЫ</p>
+          <dl class="equipment__details">
+            <div>
+              <div>
+                <dt>Тип:</dt>
+                <dd>однокорпусные и двухкорпусные</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Производительность:</dt>
+                <dd>до 5 200 м3/ч</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Напор:</dt>
+                <dd>до 4 200 м</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Мощность:</dt>
+                <dd>до 15 000 кВт</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Привод:</dt>
+                <dd>электродвигатель, турбина</dd>
+              </div>
+            </div>
+          </dl>
+
+          <img src="/img/equipment_zoom_5.png" width="371" height="241" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="/equipment_zoom.html" class="equipment__item">
+          <p class="equipment__caption">ГРУНТОВЫЕ И ШЛАМОВЫЕ НАСОСЫ И АГРЕГАТЫ</p>
+          <dl class="equipment__details">
+            <div>
+              <div>
+                <dt>Тип:</dt>
+                <dd>однокорпусные и двухкорпусные</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Производительность:</dt>
+                <dd>до 5 200 м3/ч</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Напор:</dt>
+                <dd>до 4 200 м</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Мощность:</dt>
+                <dd>до 15 000 кВт</dd>
+              </div>
+            </div>
+            <div>
+              <div>
+                <dt>Привод:</dt>
+                <dd>электродвигатель, турбина</dd>
+              </div>
+            </div>
+          </dl>
+
+          <img src="/img/equipment_zoom_6.png" width="371" height="241" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="/equipment_zoom.html" class="equipment__item">
+          <p class="equipment__caption">СПЕЦИАЛЬНЫЕ НАСОСЫ И АГРЕГАТЫ</p>
+          <dl class="equipment__details">
+            <div>
+              <div>
+                <dt>Назначение:</dt>
+                <dd>вакуумные, химические,<br>
+                  дренажные, для пожаротушения и др.</dd>
+              </div>
+            </div>
+          </dl>
+
+          <img src="/img/equipment_zoom_7.png" width="371" height="241" alt="">
+        </a>
+      </li>
+    </ul>
+
+    <div class="solutions__bottom">
+      <a href="#" class="btn btn-black">Смотреть реализованные проекты</a>
+    </div>
+  </div>
+</section>
+
+<section class="callback">
+  <div class="wrapper">
+    <h2 class="h2 border-bottom border-bottom-ssm">Заинтересовались?</h2>
+
+    <p class="callback__text">Мы поможем Вам получить ответы на все интересующие Вас вопросы</p>
+
+    <a href="#callbackModal" class="btn btn-primary btn-glow" data-toggle="modal" data-target="#callbackModal">Связаться с нами</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <div class="footer__menu">
+        <p class="footer__caption">О компании</p>
+
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">О нас</a></li>
+          <li><a href="#" class="footer__link">Миссия</a></li>
+          <li><a href="#" class="footer__link">Отрасли</a></li>
+          <li><a href="#" class="footer__link">Нам доверяют</a></li>
+          <li><a href="#" class="footer__link">Партнеры</a></li>
+          <li><a href="#" class="footer__link">Благодарности</a></li>
+          <li><a href="#" class="footer__link">Сертификаты</a></li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <p class="footer__caption">Оборудование</p>
+
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Насосные агрегаты</a></li>
+          <li><a href="#" class="footer__link">Электродвигатели</a></li>
+          <li><a href="#" class="footer__link">Гидромуфты</a></li>
+          <li><a href="#" class="footer__link">Муфты</a></li>
+          <li><a href="#" class="footer__link">Электротехническое оборудование</a></li>
+          <li><a href="#" class="footer__link">Редукторы и мультипликаторы</a></li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <p class="footer__caption">Инжиниринг</p>
+
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Проектирование</a></li>
+          <li><a href="#" class="footer__link">Комплексная поставка оборудования</a></li>
+          <li><a href="#" class="footer__link">Монтаж</a></li>
+          <li><a href="#" class="footer__link">Сервис</a></li>
+        </ul>
+      </div>
+      <ul class="footer__menu">
+        <li><a href="#" class="footer__caption">Реализованные проекты</a></li>
+        <li><a href="#" class="footer__caption">Новости</a></li>
+        <li><a href="#" class="footer__caption">Карьера</a></li>
+        <li><a href="#" class="footer__caption">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__copyright">
+      <p>© 2025 Все права защищены</p>
+
+      <div>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+      </div>
+
+      <p>Разработка сайта: Хэндрег</p>
+    </div>
+  </div>
+</footer>
+
+<div id="callbackModal" class="modal fade">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <div class="modal__body">
+        <div class="modal__top">
+          <p class="modal__title">Форма обратной связи</p>
+          <button type="button" class="modal__close" data-dismiss="modal">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 14.625L39 37.375M39 14.625L13 37.375" stroke="#010101" stroke-width="3.71429" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <form class="modal__form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="login_name">ФИО *</label>
+              <input type="name" name="login_name" id="login_name" placeholder="Иванов Иван Иванович">
+            </div>
+            <div class="form-group">
+              <label for="login_email">Email *</label>
+              <input type="email" name="login_email" id="login_email" placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="login_phone">ФИО *</label>
+              <input class="js_phone_input" type="tel" name="login_phone" id="login_phone" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+
+          <div class="modal__checkbox">
+            <input type="checkbox" name="login_privacy" id="login_privacy">
+            <label for="login_privacy">Согласие на обработку персональных данных</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-glow">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="successModal" class="modal sc-modal fade">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <div class="modal__body">
+        <div class="modal__top">
+          <button type="button" class="modal__close" data-dismiss="modal">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 14.625L39 37.375M39 14.625L13 37.375" stroke="#010101" stroke-width="3.71429" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <svg class="icon" width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M113.665 57.2467V62C113.659 73.1415 110.051 83.9825 103.38 92.9061C96.7092 101.83 87.3323 108.358 76.648 111.517C65.9638 114.676 54.5445 114.296 44.0935 110.435C33.6424 106.574 24.7194 99.4382 18.6553 90.0915C12.5912 80.7448 9.71095 69.6883 10.444 58.571C11.1771 47.4536 15.4843 36.871 22.7231 28.4015C29.962 19.9321 39.7448 14.0295 50.6123 11.5741C61.4799 9.1187 72.8501 10.2421 83.0271 14.7767M113.665 20.6667L61.9987 72.385L46.4987 56.885" stroke="#FF9318" stroke-width="10.3333" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Спасибо! Ваши данные успешно отправлены</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

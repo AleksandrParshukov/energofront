@@ -1,0 +1,36 @@
+@use '_global/breakpoints.scss' as *;
+
+.main {
+  display: flex;
+}
+
+.not-found {
+  padding-block: 80px;
+  width: 100%;
+  background: no-repeat center / cover;
+  background-image: linear-gradient(rgb(42 42 44 / 0.8)), url('../img/404_bg.png');
+  display: flex;
+
+  .wrapper {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+    color: rgba(254, 255, 255, 0.9);
+  }
+}

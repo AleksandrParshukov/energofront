@@ -1,0 +1,40 @@
+@use '../_global/breakpoints.scss' as *;
+
+.callback {
+  color: var(--color-white);
+  padding-block: 80px;
+  background: url('../../img/callback_bg.png') no-repeat center / cover;
+  border-bottom: 1px solid var(--color-primary);
+
+  .wrapper {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h2 {
+      color: inherit;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-weight: 540;
+    font-size: 18px;
+    text-align: center;
+    margin-block: 24px 52px;
+  }
+}
+
+@media (max-width: $ssm) {
+  .callback {
+    padding-block: 60px;
+
+    .wrapper {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import 'blocks/idx-engineering.css';
+@import 'blocks/engineering_zoom.css';
+.engineering__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.engineering__block:nth-child(3) {
+  flex-direction: row;
+  align-items: center;
+}
+.engineering__block:nth-child(3) img {
+  height: 200px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.idx-engineering {
+  padding: 0;
+  background: none;
+  filter: drop-shadow(0 0 20px rgba(42, 42, 44, 0.5));
+}
+.idx-engineering .shadow-wrapper {
+  width: 100%;
+  background-color: var(--color-white);
+  clip-path: polygon(0 0, 100% 35px, 100% 100%, 0 100%);
+}
+.idx-engineering .wrapper {
+  padding-block: 100px 80px;
+}
+
+@media (max-width: 991.5px) {
+  .engineering__block:nth-child(3) {
+    flex-direction: column;
+  }
+  .idx-engineering {
+    filter: drop-shadow(0 0 10px rgba(42, 42, 44, 0.5));
+  }
+  .idx-engineering .shadow-wrapper {
+    clip-path: polygon(0 0, 100% 10px, 100% 100%, 0 100%);
+  }
+  .idx-engineering .wrapper {
+    padding-block: 56px 60px;
+  }
+}

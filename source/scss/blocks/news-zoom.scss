@@ -1,0 +1,125 @@
+@use '../_global/breakpoints.scss' as *;
+
+.news-zoom {
+  padding-block: 80px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-black);
+    margin-top: 32px;
+  }
+
+  &__long-desc {
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--color-black);
+    margin-top: 60px;
+
+    table {
+      width: 100% !important;
+      height: auto !important;
+      border-collapse: collapse;
+
+      th {
+        font-weight: 600;
+        color: var(--color-white);
+        text-align: start;
+        background-color: var(--color-primary);
+      }
+
+      th,
+      td {
+        font-size: 13px;
+        padding: 10px 12px;
+      }
+
+      td {
+        font-weight: 500;
+
+        &:first-child {
+          font-weight: 600;
+        }
+      }
+
+      tr:nth-child(2n + 2) {
+        background-color: var(--color-white);
+      }
+
+      tr:nth-child(2n + 3) {
+        background-color: #f7f5f3;
+      }
+    }
+  }
+
+  &__img {
+    width: 660px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  &__more-news {
+    padding-top: 0;
+    background: transparent url('../img/news_bg.svg') no-repeat bottom center / 100% auto;
+
+    .wrapper {
+      padding-top: 0;
+    }
+
+    .idx-news__top {
+      padding-top: 60px;
+      margin-block: 52px 20px;
+      border-top: 1px solid var(--color-primary);
+    }
+
+    .idx-news__more {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .news-zoom {
+    padding-block: 60px;
+
+    .wrapper {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__date {
+      font-size: 14px;
+      margin-top: 24px;
+    }
+
+    &__long-desc {
+      font-size: 15px;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 410px;
+      margin-inline: auto;
+    }
+
+    &__more-news {
+      padding-top: 0;
+
+      .idx-news__top {
+        padding-top: 52px;
+        margin-block: 32px 20px;
+      }
+
+      .idx-news__more {
+        margin-top: 0;
+      }
+    }
+  }
+}

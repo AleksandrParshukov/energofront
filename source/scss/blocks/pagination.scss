@@ -1,0 +1,40 @@
+@use '../_global/breakpoints.scss' as *;
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 60px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  li {
+    width: min-content;
+    display: flex;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 15px;
+    min-width: 40px;
+    width: auto;
+    height: 40px;
+    padding: 4px;
+    background-color: var(--color-white);
+    border: 1px solid rgba(195, 195, 195, 0.5);
+    border-radius: 8px;
+    display: grid;
+    place-content: center;
+
+    &.active {
+      color: var(--color-white);
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+
+    &.disabled {
+      color: #757575;
+      pointer-events: none;
+    }
+  }
+}

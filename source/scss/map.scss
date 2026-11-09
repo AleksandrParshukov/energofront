@@ -1,0 +1,85 @@
+@use '_global/breakpoints.scss' as *;
+
+@import 'blocks/idx-about.css';
+@import 'blocks/partners.css';
+
+.map {
+  height: auto;
+
+  &__top {
+    padding-block: 80px;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    .idx-about__list {
+      width: 100%;
+      max-width: 1400px;
+      padding: 0;
+      margin-inline: auto;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-rows: auto;
+    }
+  }
+
+  &__map {
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 673 / 396;
+  }
+
+  &__tooltip {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-black);
+    padding: 7px 32px;
+    background-color: var(--color-white);
+    border-radius: 32px;
+    box-shadow: 0 0 5px 0 rgb(40 40 40 / 0.1);
+    position: absolute;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+
+    &.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .js_map_marker {
+    position: relative;
+    isolation: isolate;
+    z-index: 5;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 10;
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .map {
+    &__top {
+      padding-block: 60px;
+
+      .wrapper {
+        gap: 60px;
+      }
+
+      .idx-about__list {
+        max-width: 600px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  }
+}

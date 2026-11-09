@@ -1,0 +1,231 @@
+@use '_global/breakpoints.scss' as *;
+
+.breadcrumbs {
+  anchor-name: --breadcrumbs;
+
+  a:hover {
+    color: var(--color-black);
+  }
+}
+
+.equipment {
+  padding-block: 80px;
+
+  &__top {
+    height: 300px;
+    background-color: #ff9318;
+    position: relative;
+    overflow: hidden;
+
+    .wrapper {
+      height: 100%;
+      padding-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &::after {
+      content: '';
+      width: 572px;
+      height: 300px;
+      border-radius: 100%;
+      background-color: #feffff;
+      filter: blur(300px);
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    img {
+      width: auto;
+      height: 431px;
+      aspect-ratio: 618 / 431;
+      position: absolute;
+      top: 50%;
+      right: -83px;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
+    .h2 {
+      border-color: var(--color-white);
+      margin-top: 80px;
+    }
+  }
+
+  &__list {
+    --column-count: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    gap: 32px;
+  }
+
+  &__item {
+    min-height: 300px;
+    padding: 32px;
+    background-color: #f7f5f3;
+    border-radius: 24px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: auto;
+      height: 241px;
+      aspect-ratio: 371 / 241;
+      position: absolute;
+      top: 88px;
+      right: -110px;
+    }
+
+    &:hover {
+      color: var(--color-black);
+
+      .equipment__caption {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__caption {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: color 0.25s ease;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to left, #f7f5f3, #ff9318);
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+
+    > div {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &::before {
+        content: '';
+        width: auto;
+        height: 26px;
+        aspect-ratio: 30 / 26;
+        background: url('../img/equip_check.png') no-repeat center / contain;
+      }
+    }
+
+    dt {
+      font-weight: 640;
+      color: var(--color-primary);
+      display: inline;
+    }
+
+    dd {
+      font-weight: 540;
+      margin: 0;
+      display: inline;
+    }
+  }
+
+  &__back-link {
+    font-weight: 500;
+    font-size: 14px;
+    width: max-content;
+    margin-top: 4px;
+    position: absolute;
+    top: anchor(bottom --breadcrumbs);
+    left: anchor(left --breadcrumbs);
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .breadcrumbs {
+    padding-right: 70px;
+  }
+  .equipment {
+    padding-block: 60px;
+
+    &__top {
+      height: 400px;
+
+      &::after {
+        width: 100%;
+        height: 120px;
+        inset: auto 0 0;
+        transform: translateY(0);
+      }
+
+      img {
+        height: 200px;
+        margin-inline: auto;
+        inset: auto 0 0;
+        transform: translateY(0);
+      }
+
+      .h2 {
+        margin-top: 60px;
+        margin-inline: auto;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__item {
+      min-height: 200px;
+      padding: 16px;
+
+      img {
+        height: 120px;
+        top: auto;
+        bottom: -10px;
+        right: -50px;
+      }
+    }
+
+    &__caption {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    &__details {
+      > div {
+        font-size: 14px;
+        gap: 8px;
+
+        &::before {
+          height: 18px;
+        }
+      }
+    }
+
+    &__back-link {
+      position: absolute;
+      top: auto;
+      bottom: anchor(bottom --breadcrumbs);
+      left: auto;
+      right: anchor(right --breadcrumbs);
+    }
+  }
+}

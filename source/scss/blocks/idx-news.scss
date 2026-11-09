@@ -1,0 +1,75 @@
+@use '../_global/breakpoints.scss' as *;
+
+.idx-news {
+  background:
+    var(--color-white),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(249, 250, 251, 0.5) 47.7%, rgba(255, 247, 237, 0.5) 100%);
+
+  .wrapper {
+    padding-block: 120px;
+  }
+
+  &__top {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+  }
+
+  &__more {
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .news__list {
+    gap: 32px;
+  }
+
+  .swiper-slide {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+  }
+}
+
+@media (max-width: $ssm) {
+  .idx-news {
+    .wrapper {
+      padding-block: 80px;
+    }
+
+    &__top {
+      margin-bottom: 60px;
+    }
+
+    .news__list {
+      display: flex;
+      gap: 0;
+    }
+
+    .swiper-slide {
+      width: 360px;
+    }
+
+    .news__item {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .idx-news {
+    &__top {
+      justify-content: center;
+    }
+
+    &__more {
+      margin-top: 40px;
+      justify-content: center;
+    }
+  }
+}

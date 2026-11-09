@@ -1,0 +1,32 @@
+@use '../_global/breakpoints.scss' as *;
+
+.breadcrumbs {
+  list-style: none;
+  padding: 32px 0 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-black);
+  }
+
+  a {
+    color: #{'rgb(from var(--color-black) r g b / 0.5)'};
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    &::after {
+      content: '/';
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

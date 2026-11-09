@@ -1,0 +1,131 @@
+@use '../_global/breakpoints.scss' as *;
+
+.footer {
+  padding-block: 80px 32px;
+  background: var(--color-black) url('../img/footer_bg.webp') no-repeat center / cover;
+
+  &__content {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &:last-child {
+      width: min-content;
+
+      .footer__caption {
+        width: max-content;
+      }
+    }
+  }
+
+  &__caption {
+    font-weight: 600;
+    font-size: 16px;
+    color: #{'rgb(from var(--color-white) r g b / 0.8)'};
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    color: #{'rgb(from var(--color-white) r g b / 0.7)'};
+  }
+
+  &__copyright {
+    font-weight: 500;
+    font-size: 14px;
+    color: #{'rgb(from var(--color-white) r g b / 0.5)'};
+    padding-top: 32px;
+    margin-top: 48px;
+    border-top: 1px solid #{'rgb(from var(--color-white) r g b / 0.1)'};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .footer {
+    padding-block: 60px;
+
+    &__content {
+      flex-wrap: wrap;
+      gap: 32px 16px;
+    }
+
+    &__menu {
+      flex: 1 1 40%;
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .footer {
+    &__caption {
+      font-size: 15px;
+    }
+
+    &__copyright {
+      margin-top: 32px;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 12px;
+
+      > div {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .footer {
+    background-image: url('../img/footer_bg_xs.webp');
+
+    &__content {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__menu {
+      gap: 24px;
+
+      &:last-child {
+        gap: 12px;
+      }
+    }
+
+    &__caption {
+      color: var(--color-white);
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 16px 12px;
+    }
+  }
+}

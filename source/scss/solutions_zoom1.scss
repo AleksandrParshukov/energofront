@@ -1,0 +1,18 @@
+@use '_global/breakpoints.scss' as *;
+
+@import 'blocks/solutions_zoom.css';
+@import 'blocks/callback.css';
+@import 'blocks/equipment.css';
+
+.equipment {
+  padding-top: 0;
+
+  &__list {
+    margin-top: 32px;
+    justify-content: start;
+  }
+
+  &__img {
+    height: 223px;
+  }
+}

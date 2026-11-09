@@ -1,0 +1,19 @@
+@use '_global/breakpoints.scss' as *;
+
+@use '_blocks/idx-partners.scss';
+@use '_blocks/idx-equipment.scss';
+@use '_blocks/idx-solutions.scss';
+@use '_blocks/idx-contacts.scss';
+
+@import 'blocks/equipment.css';
+@import 'blocks/idx-about.css';
+@import 'blocks/idx-whyus.css';
+@import 'blocks/projects.css';
+@import 'blocks/idx-projects.css';
+@import 'blocks/news.css';
+@import 'blocks/idx-news.css';
+@import 'blocks/idx-engineering.css';
+
+.main {
+  background: var(--color-white);
+}

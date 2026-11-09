@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Энергофронт</title>
+
+    <!-- Стили страницы -->
+    
+    <link rel="stylesheet" href="/css/index.css" /> 
+  </head>
+
+  <body>
+    <header class="header header--index">
+      <div class="wrapper">
+        <a href="/" class="header__logo"><img src="./img/logo.png" width="140" height="64" alt="EnergoFront"></a>
+        <button type="button" class="header__menu-toggle js_header_menu_toggle to-md">
+          <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.3335 4.99902H26.6668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.3335 12H26.6668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M5.3335 19H26.6668" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <nav class="main-nav">
+          <button type="button" class="main-nav__close js_header_menu_close to-md">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.0685 10.1598C21.2815 9.94675 21.6272 9.94675 21.8402 10.1598C22.0533 10.3728 22.0533 10.7185 21.8402 10.9315L16.7718 16L21.8402 21.0685C22.0533 21.2815 22.0533 21.6272 21.8402 21.8402C21.6272 22.0533 21.2815 22.0533 21.0685 21.8402L16 16.7718L10.9315 21.8402C10.7185 22.0533 10.3728 22.0533 10.1598 21.8402C9.94675 21.6272 9.94675 21.2815 10.1598 21.0685L15.2282 16L10.1598 10.9315C9.94675 10.7185 9.94675 10.3728 10.1598 10.1598C10.3728 9.94675 10.7185 9.94675 10.9315 10.1598L16 15.2282L21.0685 10.1598Z" fill="#feffff" />
+            </svg>
+          </button>
+
+          <div class="header__controls to-md">
+            <div class="header__search search">
+              <button type="button" class="search__btn">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.60344 1.40014C4.48885 1.40014 3.41991 1.84294 2.63177 2.63112C1.84363 3.4193 1.40086 4.4883 1.40086 5.60296C1.40086 6.71762 1.84363 7.78662 2.63177 8.57481C3.41991 9.36299 4.48885 9.80578 5.60344 9.80578C6.71804 9.80578 7.78698 9.36299 8.57512 8.57481C9.36325 7.78662 9.80602 6.71762 9.80602 5.60296C9.80602 4.4883 9.36325 3.4193 8.57512 2.63112C7.78698 1.84294 6.71804 1.40014 5.60344 1.40014ZM3.46126e-08 5.60296C0.000127707 4.71117 0.213084 3.83228 0.621169 3.03934C1.02925 2.2464 1.62068 1.56232 2.3463 1.04394C3.07193 0.52556 3.91078 0.187859 4.79315 0.0588999C5.67553 -0.0700589 6.57593 0.0134496 7.41955 0.302485C8.26316 0.591521 9.02561 1.07774 9.64353 1.72072C10.2614 2.36371 10.717 3.14489 10.9723 3.99936C11.2276 4.85382 11.2753 5.75689 11.1115 6.6335C10.9476 7.51011 10.5769 8.33495 10.0302 9.03947L13.8034 12.8129C13.931 12.945 14.0016 13.122 14 13.3056C13.9984 13.4893 13.9247 13.665 13.7948 13.7948C13.665 13.9247 13.4893 13.9984 13.3057 14C13.122 14.0016 12.9451 13.931 12.813 13.8034L9.03975 10.0299C8.21146 10.673 7.21935 11.0708 6.17623 11.178C5.13311 11.2852 4.08084 11.0975 3.13908 10.6363C2.19732 10.1751 1.40387 9.4589 0.848939 8.5691C0.294012 7.6793 -0.000116496 6.65164 3.46126e-08 5.60296Z" fill="currentColor" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="header__language">
+              <a href="#" class="active">RU</a>
+              <a href="#">EN</a>
+            </div>
+          </div>
+
+          <ul class="main-nav__list">
+            <li class="dropdown">
+              <a href="about.html" class="main-nav__link dropdown__toggle">
+                <span>О компании</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.8999 6.53555L10.3999 12.5356L4.3999 6.53555" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </a>
+
+              <div class="js_dropdown">
+                <ul class="dropdown__menu">
+                  <li><a href="about.html" class="main-nav__link">О нас</a></li>
+                  <li><a href="#" class="main-nav__link">Миссия</a></li>
+                  <li><a href="#" class="main-nav__link">Отрасли</a></li>
+                  <li><a href="#" class="main-nav__link">Нам доверяют</a></li>
+                  <li><a href="#" class="main-nav__link">Партнеры</a></li>
+                  <li><a href="#" class="main-nav__link">Благодарности</a></li>
+                  <li><a href="#" class="main-nav__link">Сертификаты</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="equipment.html" class="main-nav__link dropdown__toggle">
+                <span>Оборудование</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.8999 6.53555L10.3999 12.5356L4.3999 6.53555" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </a>
+
+              <div class="js_dropdown">
+                <ul class="dropdown__menu">
+                  <li><a href="#" class="main-nav__link">Насосные агрегаты</a></li>
+                  <li><a href="#" class="main-nav__link">Электродвигатели</a></li>
+                  <li><a href="#" class="main-nav__link">Гидромуфты</a></li>
+                  <li><a href="#" class="main-nav__link">Муфты</a></li>
+                  <li><a href="#" class="main-nav__link">Электротехническое оборудование</a></li>
+                  <li><a href="#" class="main-nav__link">Редукторы и мультипликаторы</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="engineering.html" class="main-nav__link dropdown__toggle">
+                <span>Инжиниринг</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.8999 6.53555L10.3999 12.5356L4.3999 6.53555" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </a>
+
+              <div class="js_dropdown">
+                <ul class="dropdown__menu">
+                  <li><a href="#" class="main-nav__link">Проектирование</a></li>
+                  <li><a href="#" class="main-nav__link">Комплексная поставка оборудования</a></li>
+                  <li><a href="#" class="main-nav__link">Монтаж</a></li>
+                  <li><a href="#" class="main-nav__link">Сервис</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="projects.html" class="main-nav__link">Реализованные проекты</a></li>
+            <li><a href="news.html" class="main-nav__link">Новости</a></li>
+            <li><a href="vacancies.html" class="main-nav__link">Карьера</a></li>
+            <li><a href="contact_us.html" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__controls from-md">
+          <a href="tel:+78123091380">+7 (812) 309 13 80</a>
+
+          <div class="header__search search">
+            <button type="button" class="search__btn">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.60344 1.40014C4.48885 1.40014 3.41991 1.84294 2.63177 2.63112C1.84363 3.4193 1.40086 4.4883 1.40086 5.60296C1.40086 6.71762 1.84363 7.78662 2.63177 8.57481C3.41991 9.36299 4.48885 9.80578 5.60344 9.80578C6.71804 9.80578 7.78698 9.36299 8.57512 8.57481C9.36325 7.78662 9.80602 6.71762 9.80602 5.60296C9.80602 4.4883 9.36325 3.4193 8.57512 2.63112C7.78698 1.84294 6.71804 1.40014 5.60344 1.40014ZM3.46126e-08 5.60296C0.000127707 4.71117 0.213084 3.83228 0.621169 3.03934C1.02925 2.2464 1.62068 1.56232 2.3463 1.04394C3.07193 0.52556 3.91078 0.187859 4.79315 0.0588999C5.67553 -0.0700589 6.57593 0.0134496 7.41955 0.302485C8.26316 0.591521 9.02561 1.07774 9.64353 1.72072C10.2614 2.36371 10.717 3.14489 10.9723 3.99936C11.2276 4.85382 11.2753 5.75689 11.1115 6.6335C10.9476 7.51011 10.5769 8.33495 10.0302 9.03947L13.8034 12.8129C13.931 12.945 14.0016 13.122 14 13.3056C13.9984 13.4893 13.9247 13.665 13.7948 13.7948C13.665 13.9247 13.4893 13.9984 13.3057 14C13.122 14.0016 12.9451 13.931 12.813 13.8034L9.03975 10.0299C8.21146 10.673 7.21935 11.0708 6.17623 11.178C5.13311 11.2852 4.08084 11.0975 3.13908 10.6363C2.19732 10.1751 1.40387 9.4589 0.848939 8.5691C0.294012 7.6793 -0.000116496 6.65164 3.46126e-08 5.60296Z" fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="header__language">
+            <a href="#" class="active">RU</a>
+            <a href="#">EN</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+<section class="banner">
+  <div class="wrapper">
+    <div class="banner__content">
+      <h1 class="banner__title">
+        Разработка инжиниринговых решений для промышленных и энергетических предприятий
+      </h1>
+      <p class="banner__text">
+        Комплексное решение задач, от этапа проектирования до пуска оборудования в эксплуатацию
+      </p>
+      <div class="banner__controls">
+        <a href="#" class="btn btn-primary btn-glow">Презентация компании</a>
+        <a href="#" class="btn btn-outline-primary btn-glow">Посмотреть кейсы</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="idx-about">
+  <div class="wrapper">
+    <div class="idx-about__content">
+      <h2 class="h2 border-left border-bottom-ssm">Кто мы?</h2>
+      <p class="idx-about__text">
+        Компания EnergoFront – эффективные решения для промышленных предприятий. В нашей компании работают профессионалы с многолетним опытом работы в энергомашиностроительной отрасли, знающие ее проблематику и специфику. Наши знания и опыт есть основа уверенности в правильности и оптимальности предлагаемых решений.
+      </p>
+      <a href="about.html" class="idx-about__link">
+        <span>Подробнее о компании</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </a>
+    </div>
+
+    <ul class="idx-about__list">
+      <li class="idx-about__item">
+        <p class="idx-about__num">1300+</p>
+        <p>реализованных проектов</p>
+      </li>
+      <li class="idx-about__item">
+        <p class="idx-about__num">17+</p>
+        <p>лет на рынке</p>
+      </li>
+      <li class="idx-about__item">
+        <p class="idx-about__num">200+</p>
+        <p>постоянных клиентов</p>
+      </li>
+      <li class="idx-about__item">
+        <p class="idx-about__num">2500+</p>
+        <p>единиц оборудования<br> поставлено</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="idx-solutions">
+  <div class="wrapper">
+    <h2 class="h2 border-bottom border-bottom-ssm">Отраслевые решения</h2>
+
+    <ul class="solutions-list">
+      <li>
+        <a href="solutions_zoom1.html" class="solutions-list__item">
+          <img src="./img/solutions_1.webp" width="320" height="400" alt="">
+          <p class="solutions-list__name">Тепловая энергетика</p>
+        </a>
+      </li>
+      <li>
+        <a href="solutions_zoom2.html" class="solutions-list__item">
+          <img src="./img/solutions_2.webp" width="320" height="400" alt="">
+          <p class="solutions-list__name">Промышленное машиностроение</p>
+        </a>
+      </li>
+      <li>
+        <a href="solutions_zoom3.html" class="solutions-list__item">
+          <img src="./img/solutions_3.webp" width="320" height="400" alt="">
+          <p class="solutions-list__name">Горнорудная промышленность</p>
+        </a>
+      </li>
+      <li>
+        <a href="solutions_zoom4.html" class="solutions-list__item">
+          <img src="./img/solutions_4.webp" width="320" height="400" alt="">
+          <p class="solutions-list__name">Водоснабжение и&nbsp;водоотведение</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="idx-engineering">
+  <div class="wrapper">
+    <h2 class="h2 border-bottom border-left-ssm">Инжиниринг</h2>
+
+    <ul class="engin-list">
+      <li>
+        <a href="/engineering_zoom1.html" class="engin-list__item">
+          <img src="./img/engineering_1.webp" width="320" height="400" alt="">
+          <div class="engin-list__content">
+            <p>Технологический инжиниринг</p>
+            <div class="engin-list__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.8335 5.83325H14.1668V14.1666" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.8335 14.1666L14.1668 5.83325" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/engineering_zoom2.html" class="engin-list__item">
+          <img src="./img/engineering_2.webp" width="320" height="400" alt="">
+          <div class="engin-list__content">
+            <p>Продуктовый инжиниринг</p>
+            <div class="engin-list__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.8335 5.83325H14.1668V14.1666" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.8335 14.1666L14.1668 5.83325" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/engineering_zoom3.html" class="engin-list__item">
+          <img src="./img/engineering_3.webp" width="320" height="400" alt="">
+          <div class="engin-list__content">
+            <p>Сервисный инжиниринг</p>
+            <div class="engin-list__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.8335 5.83325H14.1668V14.1666" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.8335 14.1666L14.1668 5.83325" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/engineering_zoom4.html" class="engin-list__item">
+          <img src="./img/engineering_4.webp" width="320" height="400" alt="">
+          <div class="engin-list__content">
+            <p>Проектный инжиниринг</p>
+            <div class="engin-list__icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.8335 5.83325H14.1668V14.1666" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M5.8335 14.1666L14.1668 5.83325" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="idx-equipment">
+  <div class="shadow-wrapper">
+    <div class="wrapper">
+      <div class="idx-equipment__content">
+        <h2 class="h2 border-left">Оборудование</h2>
+        <p>Мы несем полную ответственность за качество нашего оборудования</p>
+      </div>
+
+      
+      <button type="button" class="idx-equipment__prev from-ssm js_idx_eqiup_prev from-sm">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.5625 7.17529L13.0625 16.8003L23.5625 27.3003" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <div class="idx-equipment__slider_wrap swiper js_idx_equipment_slider">
+        <div class="idx-equipment__slider swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="equipment_cat.html" class="equipment__item">
+              <div class="equipment__img">
+                <img src="./img/equipment_1.png" width="320" height="249" alt="">
+              </div>
+              <div class="equipment__item-content">
+                <p>Насосные агрегаты</p>
+                <p class="equipment__link">
+                  <span>Подробнее</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="equipment_cat.html" class="equipment__item">
+              <div class="equipment__img">
+                <img src="./img/equipment_2.png" width="320" height="249" alt="">
+              </div>
+              <div class="equipment__item-content">
+                <p>Электродвигатели</p>
+                <p class="equipment__link">
+                  <span>Подробнее</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="equipment_cat.html" class="equipment__item">
+              <div class="equipment__img">
+                <img src="./img/equipment_3.png" width="320" height="249" alt="">
+              </div>
+              <div class="equipment__item-content">
+                <p>Гидромуфты</p>
+                <p class="equipment__link">
+                  <span>Подробнее</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="equipment_cat.html" class="equipment__item">
+              <div class="equipment__img">
+                <img src="./img/equipment_4.png" width="320" height="249" alt="">
+              </div>
+              <div class="equipment__item-content">
+                <p>Муфты</p>
+                <p class="equipment__link">
+                  <span>Подробнее</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="equipment_cat.html" class="equipment__item">
+              <div class="equipment__img">
+                <img src="./img/equipment_5.png" width="320" height="249" alt="">
+              </div>
+              <div class="equipment__item-content">
+                <p>Электротехническое оборудование</p>
+                <p class="equipment__link">
+                  <span>Подробнее</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="equipment_cat.html" class="equipment__item">
+              <div class="equipment__img">
+                <img src="./img/equipment_6.png" width="320" height="249" alt="">
+              </div>
+              <div class="equipment__item-content">
+                <p>Редукторы и<br> мультипликаторы</p>
+                <p class="equipment__link">
+                  <span>Подробнее</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="idx-equipment__next from-ssm js_idx_eqiup_next from-sm">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.4375 7.17529L21.9375 16.8003L11.4375 27.3003" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="idx-whyus">
+  <div class="idx-whyus__bg"></div>
+  <div class="wrapper">
+    <div class="idx-whyus__title-block">
+      <h2 class="h2 border-bottom border-left-ssm">Почему мы</h2>
+    </div>
+    <div class="idx-whyus__content">
+      <ul class="idx-whyus__list js_whyus_list">
+        <li id="idx-whyus-1" class="active">
+          <div class="idx-whyus__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.7031 7.94745C25.3199 7.33078 25.6665 6.49433 25.6666 5.62212C25.6667 4.7499 25.3204 3.91336 24.7037 3.29654C24.087 2.67971 23.2506 2.33312 22.3783 2.33301C21.5061 2.3329 20.6696 2.67928 20.0528 3.29595L4.48242 18.8698C4.21155 19.1399 4.01122 19.4724 3.89909 19.8381L2.35792 24.9154C2.32777 25.0163 2.32549 25.1235 2.35133 25.2256C2.37717 25.3277 2.43016 25.4209 2.50469 25.4953C2.57921 25.5697 2.67248 25.6225 2.77461 25.6482C2.87674 25.6739 2.98391 25.6714 3.08476 25.6411L8.16326 24.1011C8.52862 23.99 8.86113 23.7909 9.13159 23.5213L24.7031 7.94745Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17.5 5.8335L22.1667 10.5002" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <p class="idx-whyus__name">ПРОЕКТИРОВАНИЕ</p>
+          <p class="idx-whyus__desc">Полный цикл проектных работ: от обследования объекта до реализации решений.</p>
+        </li>
+        <li id="idx-whyus-2">
+          <div class="idx-whyus__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.0567 15.0381L19.8242 24.9851C19.844 25.1022 19.8276 25.2226 19.7771 25.3301C19.7266 25.4377 19.6445 25.5272 19.5418 25.5868C19.439 25.6465 19.3205 25.6733 19.2021 25.6637C19.0837 25.6542 18.9711 25.6087 18.8792 25.5334L14.7025 22.3986C14.5009 22.248 14.256 22.1666 14.0043 22.1666C13.7526 22.1666 13.5077 22.248 13.306 22.3986L9.12236 25.5323C9.03057 25.6074 8.91804 25.6528 8.79978 25.6624C8.68151 25.6719 8.56315 25.6452 8.46047 25.5858C8.35779 25.5263 8.27569 25.437 8.2251 25.3296C8.17452 25.2223 8.15787 25.1021 8.17736 24.9851L9.9437 15.0381" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14 16.3335C17.866 16.3335 21 13.1995 21 9.3335C21 5.4675 17.866 2.3335 14 2.3335C10.134 2.3335 7 5.4675 7 9.3335C7 13.1995 10.134 16.3335 14 16.3335Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <p class="idx-whyus__name">ЭКСПЕРТИЗА И КАЧЕСТВО</p>
+          <p class="idx-whyus__desc">Полный цикл проектных работ: от обследования объекта до реализации решений.</p>
+        </li>
+        <li id="idx-whyus-3">
+          <div class="idx-whyus__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.1502 7.34959C16.9365 7.56767 16.8167 7.86088 16.8167 8.16625C16.8167 8.47163 16.9365 8.76484 17.1502 8.98292L19.0169 10.8496C19.235 11.0634 19.5282 11.1831 19.8336 11.1831C20.1389 11.1831 20.4321 11.0634 20.6502 10.8496L24.2739 7.22709C24.6472 6.85142 25.2807 6.97042 25.4207 7.48142C25.7732 8.76344 25.7533 10.1193 25.3633 11.3904C24.9733 12.6616 24.2293 13.7953 23.2185 14.659C22.2077 15.5228 20.9717 16.0807 19.6553 16.2677C18.339 16.4546 16.9966 16.2628 15.7852 15.7146L6.55689 24.9429C6.09276 25.4069 5.46332 25.6675 4.80706 25.6674C4.15079 25.6673 3.52144 25.4065 3.05747 24.9423C2.5935 24.4782 2.3329 23.8488 2.33301 23.1925C2.33312 22.5362 2.59392 21.9069 3.05805 21.4429L12.2864 12.2146C11.7382 11.0033 11.5464 9.66085 11.7333 8.34446C11.9202 7.02807 12.4782 5.79215 13.3419 4.7813C14.2057 3.77046 15.3394 3.02652 16.6105 2.63652C17.8816 2.24652 19.2375 2.2266 20.5196 2.57909C21.0306 2.71909 21.1496 3.35142 20.7751 3.72709L17.1502 7.34959Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <p class="idx-whyus__name">МОНТАЖ</p>
+          <p class="idx-whyus__desc">Полный цикл проектных работ: от обследования объекта до реализации решений.</p>
+        </li>
+        <li id="idx-whyus-4">
+          <div class="idx-whyus__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.3335 20.9998V6.99984C16.3335 6.381 16.0877 5.78751 15.6501 5.34992C15.2125 4.91234 14.619 4.6665 14.0002 4.6665H4.66683C4.04799 4.6665 3.4545 4.91234 3.01691 5.34992C2.57933 5.78751 2.3335 6.381 2.3335 6.99984V19.8332C2.3335 20.1426 2.45641 20.4393 2.6752 20.6581C2.894 20.8769 3.19074 20.9998 3.50016 20.9998H5.8335" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17.5 21H10.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22.1668 21.0002H24.5002C24.8096 21.0002 25.1063 20.8772 25.3251 20.6585C25.5439 20.4397 25.6668 20.1429 25.6668 19.8335V15.5752C25.6664 15.3104 25.5758 15.0537 25.4102 14.8472L21.3502 9.77216C21.241 9.63552 21.1026 9.52516 20.9451 9.44923C20.7876 9.3733 20.615 9.33375 20.4402 9.3335H16.3335" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M19.8333 23.3332C21.122 23.3332 22.1667 22.2885 22.1667 20.9998C22.1667 19.7112 21.122 18.6665 19.8333 18.6665C18.5447 18.6665 17.5 19.7112 17.5 20.9998C17.5 22.2885 18.5447 23.3332 19.8333 23.3332Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8.16683 23.3332C9.45549 23.3332 10.5002 22.2885 10.5002 20.9998C10.5002 19.7112 9.45549 18.6665 8.16683 18.6665C6.87816 18.6665 5.8335 19.7112 5.8335 20.9998C5.8335 22.2885 6.87816 23.3332 8.16683 23.3332Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <p class="idx-whyus__name">ПОСТАВКА</p>
+          <p class="idx-whyus__desc">Полный цикл проектных работ: от обследования объекта до реализации решений.</p>
+        </li>
+        <li id="idx-whyus-5">
+          <div class="idx-whyus__icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.5 16.3333H7C7.61884 16.3333 8.21233 16.5792 8.64992 17.0168C9.0875 17.4543 9.33333 18.0478 9.33333 18.6667V22.1667C9.33333 22.7855 9.0875 23.379 8.64992 23.8166C8.21233 24.2542 7.61884 24.5 7 24.5H5.83333C5.21449 24.5 4.621 24.2542 4.18342 23.8166C3.74583 23.379 3.5 22.7855 3.5 22.1667V14C3.5 11.2152 4.60625 8.54451 6.57538 6.57538C8.54451 4.60625 11.2152 3.5 14 3.5C16.7848 3.5 19.4555 4.60625 21.4246 6.57538C23.3938 8.54451 24.5 11.2152 24.5 14V22.1667C24.5 22.7855 24.2542 23.379 23.8166 23.8166C23.379 24.2542 22.7855 24.5 22.1667 24.5H21C20.3812 24.5 19.7877 24.2542 19.3501 23.8166C18.9125 23.379 18.6667 22.7855 18.6667 22.1667V18.6667C18.6667 18.0478 18.9125 17.4543 19.3501 17.0168C19.7877 16.5792 20.3812 16.3333 21 16.3333H24.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <p class="idx-whyus__name">СЕРВИС</p>
+          <p class="idx-whyus__desc">Полный цикл проектных работ: от обследования объекта до реализации решений.</p>
+        </li>
+      </ul>
+
+      <ul class="idx-whyus__control from-sm">
+        <li>
+          <a href="#idx-whyus-1" class="idx-whyus__control-link active js_whyus_control_link">
+            <div class="idx-whyus__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.7031 7.94745C25.3199 7.33078 25.6665 6.49433 25.6666 5.62212C25.6667 4.7499 25.3204 3.91336 24.7037 3.29654C24.087 2.67971 23.2506 2.33312 22.3783 2.33301C21.5061 2.3329 20.6696 2.67928 20.0528 3.29595L4.48242 18.8698C4.21155 19.1399 4.01122 19.4724 3.89909 19.8381L2.35792 24.9154C2.32777 25.0163 2.32549 25.1235 2.35133 25.2256C2.37717 25.3277 2.43016 25.4209 2.50469 25.4953C2.57921 25.5697 2.67248 25.6225 2.77461 25.6482C2.87674 25.6739 2.98391 25.6714 3.08476 25.6411L8.16326 24.1011C8.52862 23.99 8.86113 23.7909 9.13159 23.5213L24.7031 7.94745Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 5.8335L22.1667 10.5002" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <p class="idx-whyus__name">ПРОЕКТИРОВАНИЕ</p>
+          </a>
+        </li>
+        <li>
+          <a href="#idx-whyus-2" class="idx-whyus__control-link js_whyus_control_link">
+            <div class="idx-whyus__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0567 15.0381L19.8242 24.9851C19.844 25.1022 19.8276 25.2226 19.7771 25.3301C19.7266 25.4377 19.6445 25.5272 19.5418 25.5868C19.439 25.6465 19.3205 25.6733 19.2021 25.6637C19.0837 25.6542 18.9711 25.6087 18.8792 25.5334L14.7025 22.3986C14.5009 22.248 14.256 22.1666 14.0043 22.1666C13.7526 22.1666 13.5077 22.248 13.306 22.3986L9.12236 25.5323C9.03057 25.6074 8.91804 25.6528 8.79978 25.6624C8.68151 25.6719 8.56315 25.6452 8.46047 25.5858C8.35779 25.5263 8.27569 25.437 8.2251 25.3296C8.17452 25.2223 8.15787 25.1021 8.17736 24.9851L9.9437 15.0381" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14 16.3335C17.866 16.3335 21 13.1995 21 9.3335C21 5.4675 17.866 2.3335 14 2.3335C10.134 2.3335 7 5.4675 7 9.3335C7 13.1995 10.134 16.3335 14 16.3335Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <p class="idx-whyus__name">ЭКСПЕРТИЗА И КАЧЕСТВО</p>
+          </a>
+        </li>
+        <li>
+          <a href="#idx-whyus-3" class="idx-whyus__control-link js_whyus_control_link">
+            <div class="idx-whyus__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.1502 7.34959C16.9365 7.56767 16.8167 7.86088 16.8167 8.16625C16.8167 8.47163 16.9365 8.76484 17.1502 8.98292L19.0169 10.8496C19.235 11.0634 19.5282 11.1831 19.8336 11.1831C20.1389 11.1831 20.4321 11.0634 20.6502 10.8496L24.2739 7.22709C24.6472 6.85142 25.2807 6.97042 25.4207 7.48142C25.7732 8.76344 25.7533 10.1193 25.3633 11.3904C24.9733 12.6616 24.2293 13.7953 23.2185 14.659C22.2077 15.5228 20.9717 16.0807 19.6553 16.2677C18.339 16.4546 16.9966 16.2628 15.7852 15.7146L6.55689 24.9429C6.09276 25.4069 5.46332 25.6675 4.80706 25.6674C4.15079 25.6673 3.52144 25.4065 3.05747 24.9423C2.5935 24.4782 2.3329 23.8488 2.33301 23.1925C2.33312 22.5362 2.59392 21.9069 3.05805 21.4429L12.2864 12.2146C11.7382 11.0033 11.5464 9.66085 11.7333 8.34446C11.9202 7.02807 12.4782 5.79215 13.3419 4.7813C14.2057 3.77046 15.3394 3.02652 16.6105 2.63652C17.8816 2.24652 19.2375 2.2266 20.5196 2.57909C21.0306 2.71909 21.1496 3.35142 20.7751 3.72709L17.1502 7.34959Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <p class="idx-whyus__name">МОНТАЖ</p>
+          </a>
+        </li>
+        <li>
+          <a href="#idx-whyus-4" class="idx-whyus__control-link js_whyus_control_link">
+            <div class="idx-whyus__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.3335 20.9998V6.99984C16.3335 6.381 16.0877 5.78751 15.6501 5.34992C15.2125 4.91234 14.619 4.6665 14.0002 4.6665H4.66683C4.04799 4.6665 3.4545 4.91234 3.01691 5.34992C2.57933 5.78751 2.3335 6.381 2.3335 6.99984V19.8332C2.3335 20.1426 2.45641 20.4393 2.6752 20.6581C2.894 20.8769 3.19074 20.9998 3.50016 20.9998H5.8335" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 21H10.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22.1668 21.0002H24.5002C24.8096 21.0002 25.1063 20.8772 25.3251 20.6585C25.5439 20.4397 25.6668 20.1429 25.6668 19.8335V15.5752C25.6664 15.3104 25.5758 15.0537 25.4102 14.8472L21.3502 9.77216C21.241 9.63552 21.1026 9.52516 20.9451 9.44923C20.7876 9.3733 20.615 9.33375 20.4402 9.3335H16.3335" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M19.8333 23.3332C21.122 23.3332 22.1667 22.2885 22.1667 20.9998C22.1667 19.7112 21.122 18.6665 19.8333 18.6665C18.5447 18.6665 17.5 19.7112 17.5 20.9998C17.5 22.2885 18.5447 23.3332 19.8333 23.3332Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8.16683 23.3332C9.45549 23.3332 10.5002 22.2885 10.5002 20.9998C10.5002 19.7112 9.45549 18.6665 8.16683 18.6665C6.87816 18.6665 5.8335 19.7112 5.8335 20.9998C5.8335 22.2885 6.87816 23.3332 8.16683 23.3332Z" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <p class="idx-whyus__name">ПОСТАВКА</p>
+          </a>
+        </li>
+        <li id="idx-whyus-5">
+          <a href="#idx-whyus-5" class="idx-whyus__control-link js_whyus_control_link">
+            <div class="idx-whyus__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 16.3333H7C7.61884 16.3333 8.21233 16.5792 8.64992 17.0168C9.0875 17.4543 9.33333 18.0478 9.33333 18.6667V22.1667C9.33333 22.7855 9.0875 23.379 8.64992 23.8166C8.21233 24.2542 7.61884 24.5 7 24.5H5.83333C5.21449 24.5 4.621 24.2542 4.18342 23.8166C3.74583 23.379 3.5 22.7855 3.5 22.1667V14C3.5 11.2152 4.60625 8.54451 6.57538 6.57538C8.54451 4.60625 11.2152 3.5 14 3.5C16.7848 3.5 19.4555 4.60625 21.4246 6.57538C23.3938 8.54451 24.5 11.2152 24.5 14V22.1667C24.5 22.7855 24.2542 23.379 23.8166 23.8166C23.379 24.2542 22.7855 24.5 22.1667 24.5H21C20.3812 24.5 19.7877 24.2542 19.3501 23.8166C18.9125 23.379 18.6667 22.7855 18.6667 22.1667V18.6667C18.6667 18.0478 18.9125 17.4543 19.3501 17.0168C19.7877 16.5792 20.3812 16.3333 21 16.3333H24.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <p class="idx-whyus__name">СЕРВИС</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="idx-partners">
+  <div class="wrapper">
+    <div class="idx-partners__top">
+      <h2 class="h2 border-left border-bottom-ssm">Нам доверяют</h2>
+      <a href="partners.html" class="idx-partners__more from-sm">
+        <span>Все партнеры</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="idx-partners__slider-wrapper">
+      <button type="button" class="js_idx_partners_prev from-sm">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </svg>
+      </button>
+
+      <div class="swiper js_idx_partners_slider">
+        <div class="swiper-wrapper">
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_1.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_2.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_3.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_4.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_5.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_6.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_7.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_8.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_1.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_2.png" width="128" alt=""></div>
+          <div class="idx-partners__item swiper-slide"><img src="./img/idx-partners_3.png" width="128" alt=""></div>
+        </div>
+      </div>
+
+      <button type="button" class="js_idx_partners_next from-sm">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.4375 7.17529L21.9375 16.8003L11.4375 27.3003" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <a href="partners.html" class="idx-partners__more to-sm">
+      <span>Все партнеры</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<section class="idx-projects">
+  <div class="idx-projects__bg"></div>
+  <div class="wrapper">
+    <div class="idx-projects__content">
+      <h2 class="h2 border-bottom border-left-ssm">Реализованные проекты</h2>
+      <p class="idx-projects__text">Более 1300 успешных проектов по всей России</p>
+      <a href="projects.html" class="btn btn-primary btn-glow from-md">Смотреть все проекты</a>
+    </div>
+    <div class="idx-projects__list">
+      <ul class="projects__list">
+        <li>
+          <a href="projects_zoom.html" class="projects__item">
+            <div class="projects__year">2025</div>
+            <img src="./img/projects_1.webp" class="projects__img" width="360" height="228" alt="">
+            <ul class="projects__tags">
+              <li>Насосное оборудование</li>
+              <li>Новоленская ТЭС</li>
+            </ul>
+            <p class="projects__caption">
+              Комплексная поставка насосного оборудования для объекта энергетики — Новоленской ТЭС
+            </p>
+            <p class="projects__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.22852 3.28027L10.0285 7.68027L5.22852 12.4803" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </p>
+          </a>
+        </li>
+        <li>
+          <a href="projects_zoom.html" class="projects__item">
+            <div class="projects__year">2025</div>
+            <img src="./img/projects_2.webp" class="projects__img" width="360" height="228" alt="">
+            <ul class="projects__tags">
+              <li>Насос</li>
+              <li>ПАО “РусГидро”</li>
+            </ul>
+            <p class="projects__caption">
+              Поставка питательных насосов марки DG270-140Cx10 (Q=270 м3/ч, 1650 м) производства Shanghai Kaiquan Pump Industry (Group) Co., Ltd. (Китай) для нужд ПАО «РусГидро»
+            </p>
+            <p class="projects__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.22852 3.28027L10.0285 7.68027L5.22852 12.4803" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </p>
+          </a>
+        </li>
+      </ul>
+
+      <a href="projects.html" class="btn btn-black to-md">Смотреть все проекты</a>
+    </div>
+  </div>
+</section>
+
+<section class="idx-news">
+  <div class="wrapper">
+    <div class="idx-news__top">
+      <h2 class="h2 border-left border-bottom-ssm">Новости компании</h2>
+      <a href="news.html" class="idx-news__more from-sm">
+        <span>Смотреть ещё</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="swiper js_news_slider">
+      <div class="news__list swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="news_zoom.html" class="news__item">
+            <img src="./img/news_1.webp" class="news__img" width="442" height="216" alt="">
+            <p class="news__date">
+              <img src="./img/icons/calendar.svg" width="16" height="16" alt="">
+              <span>31.10.2025</span>
+            </p>
+            <p class="news__caption">
+              Дебют «ЭнергоФронта» на PCVexpo-2025: Успешный старт и перспективные контакты
+            </p>
+            <p class="news__short-desc desc">
+              С 21 по 23 октября 2025 года компания «ЭнергоФронт» успешно представила свои услуги на международной специализированной выставке PCVexpo в МВЦ «Крокус Экспо».
+            </p>
+
+            <p class="news__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.22852 3.28027L10.0285 7.68027L5.22852 12.4803" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="news_zoom.html" class="news__item">
+            <img src="./img/news_2.webp" class="news__img" width="442" height="216" alt="">
+            <p class="news__date">
+              <img src="./img/icons/calendar.svg" width="16" height="16" alt="">
+              <span>04.11.2025</span>
+            </p>
+            <p class="news__caption">
+              День народного единства! Уважаемые коллеги и партнеры!
+            </p>
+            <p class="news__short-desc desc">
+              Поздравляем с Днем народного единства! Желаем, чтобы дух взаимопонимания и согласия укреплял наши деловые отношения, а совместная работа вела к новым высотам. Мира, процветания и уверенности в завтрашнем дне!
+            </p>
+
+            <p class="news__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.22852 3.28027L10.0285 7.68027L5.22852 12.4803" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </p>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="news_zoom.html" class="news__item">
+            <img src="./img/news_1.webp" class="news__img" width="442" height="216" alt="">
+            <p class="news__date">
+              <img src="./img/icons/calendar.svg" width="16" height="16" alt="">
+              <span>19.11.2025</span>
+            </p>
+            <p class="news__caption">
+              Инвестиции в развитие: в «ЭнергоФронте» завершилось интенсивное обучение для отдела продаж
+            </p>
+            <p class="news__short-desc desc">
+              В компании «Энергофронт» успешно завершилась трехдневная образовательная программа для коммерческого отдела компании.Мероприятие стало частью системной работы компании по непрерывному развитию персонала, подтверждая тезис о том, что наши сотрудники – главная ценность.
+            </p>
+
+            <p class="news__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.22852 3.28027L10.0285 7.68027L5.22852 12.4803" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="news.html" class="idx-news__more to-sm">
+      <span>Смотреть ещё</span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.22852 3.28003L10.0285 7.68003L5.22852 12.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+    </a>
+  </div>
+</section>
+
+<section class="idx-contacts contacts">
+  <div class="wrapper">
+    <div class="contacts__content">
+      <h2 class="h2 border-left border-left-ssm">Контакты</h2>
+      <p class="contacts__desc">
+        Свяжитесь с нами для получения консультации по вашему проекту
+      </p>
+    </div>
+
+    <ul class="contacts__list">
+      <li class="contacts__item address">
+        <div class="contacts__icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6673 8.33332C16.6673 12.4942 12.0515 16.8275 10.5015 18.1658C10.3571 18.2744 10.1813 18.3331 10.0007 18.3331C9.81999 18.3331 9.64421 18.2744 9.49982 18.1658C7.94982 16.8275 3.33398 12.4942 3.33398 8.33332C3.33398 6.56521 4.03636 4.86952 5.28661 3.61928C6.53685 2.36904 8.23254 1.66666 10.0007 1.66666C11.7688 1.66666 13.4645 2.36904 14.7147 3.61928C15.9649 4.86952 16.6673 6.56521 16.6673 8.33332Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 10.8333C11.3807 10.8333 12.5 9.71406 12.5 8.33334C12.5 6.95263 11.3807 5.83334 10 5.83334C8.61929 5.83334 7.5 6.95263 7.5 8.33334C7.5 9.71406 8.61929 10.8333 10 10.8333Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Офис</p>
+        <p class="contacts__address">
+          192019, Россия, Санкт-Петербург, ул.Седова д.12, БЦ «Т4», офис 518
+        </p>
+      </li>
+      <li class="contacts__item predst">
+        <div class="contacts__icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6673 8.33332C16.6673 12.4942 12.0515 16.8275 10.5015 18.1658C10.3571 18.2744 10.1813 18.3331 10.0007 18.3331C9.81999 18.3331 9.64421 18.2744 9.49982 18.1658C7.94982 16.8275 3.33398 12.4942 3.33398 8.33332C3.33398 6.56521 4.03636 4.86952 5.28661 3.61928C6.53685 2.36904 8.23254 1.66666 10.0007 1.66666C11.7688 1.66666 13.4645 2.36904 14.7147 3.61928C15.9649 4.86952 16.6673 6.56521 16.6673 8.33332Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M10 10.8333C11.3807 10.8333 12.5 9.71406 12.5 8.33334C12.5 6.95263 11.3807 5.83334 10 5.83334C8.61929 5.83334 7.5 6.95263 7.5 8.33334C7.5 9.71406 8.61929 10.8333 10 10.8333Z" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Представительство</p>
+        <p class="contacts__address">
+          4255/4287 Cao’an Road, Jiading District, Шанхай, Китай
+        </p>
+      </li>
+      <li class="contacts__item phone">
+        <div class="contacts__icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.0713 13.1689C11.2296 13.2416 11.408 13.2582 11.5771 13.216C11.7461 13.1738 11.8957 13.0752 12.0013 12.9366L12.2734 12.5801C12.4163 12.3897 12.6015 12.2351 12.8144 12.1287C13.0273 12.0222 13.2621 11.9668 13.5001 11.9668H15.8001C16.2068 11.9668 16.5968 12.1283 16.8844 12.4159C17.1719 12.7034 17.3335 13.0935 17.3335 13.5001V15.8001C17.3335 16.2068 17.1719 16.5968 16.8844 16.8844C16.5968 17.1719 16.2068 17.3335 15.8001 17.3335C12.1401 17.3335 8.63 15.8796 6.04197 13.2915C3.45394 10.7035 2 7.19338 2 3.53335C2 3.12668 2.16155 2.73667 2.44911 2.44911C2.73667 2.16155 3.12668 2 3.53335 2H5.83337C6.24004 2 6.63006 2.16155 6.91762 2.44911C7.20517 2.73667 7.36672 3.12668 7.36672 3.53335V5.83337C7.36672 6.07142 7.3113 6.3062 7.20484 6.51911C7.09839 6.73202 6.94382 6.91723 6.75338 7.06005L6.39458 7.32916C6.25383 7.43663 6.15463 7.58951 6.11382 7.76183C6.07301 7.93415 6.09311 8.11529 6.17071 8.27447C7.21851 10.4027 8.9418 12.1238 11.0713 13.1689Z" stroke="currentColor" stroke-width="1.53335" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Телефон</p>
+        <a href="tel:+78123091380" class="contacts__link">+7 (812) 309 13 80</a>
+      </li>
+      <li class="contacts__item email">
+        <div class="contacts__icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.1673 6.41678L11.9256 11.6665C11.6459 11.829 11.3282 11.9145 11.0048 11.9145C10.6813 11.9145 10.3637 11.829 10.084 11.6665L1.83398 6.41678" stroke="currentColor" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.334 3.66678H3.66732C2.6548 3.66678 1.83398 4.48759 1.83398 5.50011V16.5001C1.83398 17.5126 2.6548 18.3334 3.66732 18.3334H18.334C19.3465 18.3334 20.1673 17.5126 20.1673 16.5001V5.50011C20.1673 4.48759 19.3465 3.66678 18.334 3.66678Z" stroke="currentColor" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <p class="contacts__caption">Email</p>
+        <a href="mailto:info@energofront.ru" class="contacts__link">info@energofront.ru</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="map">
+    <div class="map__block">
+      <p class="map__city">Санкт-Петербург</p>
+      <p class="map__address">192019, Россия, Санкт-Петербург, ул. Седова д.12, БЦ «Т4», офис 518</p>
+      <a href="https://yandex.ru/maps/?rtext=~59.902969,30.3985" class="btn btn-primary">Построить маршрут</a>
+    </div>
+    <div id="" class="map__map js_map"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer__content">
+      <div class="footer__menu">
+        <p class="footer__caption">О компании</p>
+
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">О нас</a></li>
+          <li><a href="#" class="footer__link">Миссия</a></li>
+          <li><a href="#" class="footer__link">Отрасли</a></li>
+          <li><a href="#" class="footer__link">Нам доверяют</a></li>
+          <li><a href="#" class="footer__link">Партнеры</a></li>
+          <li><a href="#" class="footer__link">Благодарности</a></li>
+          <li><a href="#" class="footer__link">Сертификаты</a></li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <p class="footer__caption">Оборудование</p>
+
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Насосные агрегаты</a></li>
+          <li><a href="#" class="footer__link">Электродвигатели</a></li>
+          <li><a href="#" class="footer__link">Гидромуфты</a></li>
+          <li><a href="#" class="footer__link">Муфты</a></li>
+          <li><a href="#" class="footer__link">Электротехническое оборудование</a></li>
+          <li><a href="#" class="footer__link">Редукторы и мультипликаторы</a></li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <p class="footer__caption">Инжиниринг</p>
+
+        <ul class="footer__list">
+          <li><a href="#" class="footer__link">Проектирование</a></li>
+          <li><a href="#" class="footer__link">Комплексная поставка оборудования</a></li>
+          <li><a href="#" class="footer__link">Монтаж</a></li>
+          <li><a href="#" class="footer__link">Сервис</a></li>
+        </ul>
+      </div>
+      <ul class="footer__menu">
+        <li><a href="#" class="footer__caption">Реализованные проекты</a></li>
+        <li><a href="#" class="footer__caption">Новости</a></li>
+        <li><a href="#" class="footer__caption">Карьера</a></li>
+        <li><a href="#" class="footer__caption">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__copyright">
+      <p>© 2025 Все права защищены</p>
+
+      <div>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+      </div>
+
+      <p>Разработка сайта: Хэндрег</p>
+    </div>
+  </div>
+</footer>
+
+<div id="callbackModal" class="modal fade">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <div class="modal__body">
+        <div class="modal__top">
+          <p class="modal__title">Форма обратной связи</p>
+          <button type="button" class="modal__close" data-dismiss="modal">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 14.625L39 37.375M39 14.625L13 37.375" stroke="#010101" stroke-width="3.71429" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <form class="modal__form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="login_name">ФИО *</label>
+              <input type="name" name="login_name" id="login_name" placeholder="Иванов Иван Иванович">
+            </div>
+            <div class="form-group">
+              <label for="login_email">Email *</label>
+              <input type="email" name="login_email" id="login_email" placeholder="example@mail.com">
+            </div>
+            <div class="form-group">
+              <label for="login_phone">ФИО *</label>
+              <input class="js_phone_input" type="tel" name="login_phone" id="login_phone" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+
+          <div class="modal__checkbox">
+            <input type="checkbox" name="login_privacy" id="login_privacy">
+            <label for="login_privacy">Согласие на обработку персональных данных</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-glow">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="successModal" class="modal sc-modal fade">
+  <div class="modal__dialog">
+    <div class="modal__content">
+      <div class="modal__body">
+        <div class="modal__top">
+          <button type="button" class="modal__close" data-dismiss="modal">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 14.625L39 37.375M39 14.625L13 37.375" stroke="#010101" stroke-width="3.71429" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+
+        <svg class="icon" width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M113.665 57.2467V62C113.659 73.1415 110.051 83.9825 103.38 92.9061C96.7092 101.83 87.3323 108.358 76.648 111.517C65.9638 114.676 54.5445 114.296 44.0935 110.435C33.6424 106.574 24.7194 99.4382 18.6553 90.0915C12.5912 80.7448 9.71095 69.6883 10.444 58.571C11.1771 47.4536 15.4843 36.871 22.7231 28.4015C29.962 19.9321 39.7448 14.0295 50.6123 11.5741C61.4799 9.1187 72.8501 10.2421 83.0271 14.7767M113.665 20.6667L61.9987 72.385L46.4987 56.885" stroke="#FF9318" stroke-width="10.3333" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <p>Спасибо! Ваши данные успешно отправлены</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

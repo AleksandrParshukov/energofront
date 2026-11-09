@@ -1,0 +1,46 @@
+@use '_global/breakpoints.scss' as *;
+
+@import 'blocks/solutions_zoom.css';
+@import 'blocks/callback.css';
+@import 'equipment_cat.css';
+
+.equipment {
+  padding-top: 0;
+
+  &__list {
+    margin-top: 32px;
+  }
+}
+
+.solutions {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__img {
+    width: 320px;
+    height: auto;
+    max-height: 400px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: $ssm) {
+  .solutions {
+    &__item {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: auto;
+      max-height: 300px;
+    }
+  }
+}

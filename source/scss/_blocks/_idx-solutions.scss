@@ -1,0 +1,68 @@
+@use '../_global/breakpoints.scss' as *;
+
+.idx-solutions {
+  padding-block: 120px 80px;
+  background: linear-gradient(180deg, #feffff 23.5%, rgba(255, 147, 24, 0.6) 100%);
+  border-block: 1px solid var(--color-primary);
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 345px;
+    height: 347px;
+    border-radius: 100vw;
+    background-color: #{'rgb(from var(--color-primary) r g b / 0.2)'};
+    filter: blur(50px);
+    position: absolute;
+  }
+
+  &::before {
+    bottom: -253px;
+    left: -172px;
+  }
+
+  &::after {
+    top: -129px;
+    right: -133px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    .h2 {
+      isolation: isolate;
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .idx-solutions {
+    padding-block: 80px;
+
+    &::before {
+      bottom: -253px;
+      left: -172px;
+    }
+
+    &::after {
+      width: 211px;
+      height: 212px;
+      top: -66px;
+      right: -94px;
+    }
+
+    .wrapper {
+      align-items: start;
+      gap: 60px;
+
+      .h2 {
+        margin-inline: auto;
+      }
+    }
+  }
+}

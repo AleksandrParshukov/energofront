@@ -1,0 +1,27 @@
+@import 'blocks/solutions_zoom.css';
+@import 'blocks/callback.css';
+@import 'blocks/equipment.css';
+.solutions .info__list {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.solutions .info__item {
+  flex: 1 1 40%;
+}
+
+.equipment {
+  padding-top: 0;
+}
+.equipment__list {
+  margin-top: 32px;
+  justify-content: start;
+}
+.equipment__img {
+  height: 223px;
+}
+
+@media (max-width: 991.5px) {
+  .solutions .info__list {
+    flex-direction: column;
+  }
+}

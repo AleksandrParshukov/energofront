@@ -1,0 +1,100 @@
+@use '../_global/breakpoints.scss' as *;
+
+.idx-partners {
+  padding-block: 80px 60px;
+  background: var(--color-black) url('../img/idx-partners_bg.webp') no-repeat center/ cover;
+
+  &__top {
+    color: var(--color-black);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 24px;
+
+    .h2 {
+      font-size: 28px;
+    }
+  }
+
+  &__more {
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__slider-wrapper {
+    margin-inline: -40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    button:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__item {
+    width: 166px;
+    height: 100px;
+    padding-inline: 8px;
+    box-shadow: 0 0 12px 0 #{'rgb(from var(--color-primary) r g b / 0.5)'};
+    background: var(--color-white);
+    border-radius: 12px;
+    display: grid;
+    place-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .swiper-wrapper {
+    padding-block: 20px;
+  }
+}
+
+@media (max-width: $md) {
+  .idx-partners {
+    &__list {
+      grid-template-columns: repeat(4, minmax(120px, 162px));
+    }
+  }
+}
+
+@media (max-width: $ssm) {
+  .idx-partners {
+    &__top {
+      justify-content: center;
+    }
+
+    &__more {
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    &__slider-wrapper {
+      margin-inline: 0;
+
+      .swiper-wrapper {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__item {
+      height: 100px !important;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .idx-partners {
+    &__list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
